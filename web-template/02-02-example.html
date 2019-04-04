@@ -1,0 +1,874 @@
+<!DOCTYPE html>                                                                 <!-- HTML 5 file -->
+
+<!-- PRACTICALSERIES (c) 2016
+
+*******************************************************************************
+
+PRACTICALSERIES: Practical Series of Publications by Michael Gledhill
+                 Published in the United Kingdom
+
+                 Email: mg@practicalseries.com
+                 Web:   https://practicalseries.com
+
+******************************************************************************* -->
+
+<html lang="en">                                                                <!-- Declare language                              -->
+    <head>                                                                      <!-- Start of head section                         -->
+        <meta charset="utf-8">                                                  <!-- Use unicode char set (< 1024 char from SOF)   -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Make page follow browser width and reset zoom -->
+        <meta name="description" content="An example document built using the website template, this is part 2: Fairfax WTW - a functional specification, system overview">
+
+<!-- ==========================================================================
+
+
+
+*******************************************************************************
+Title :          WEBSITE TEMPLATE                            02-02-example.HTML
+*******************************************************************************
+DETAILS
+
+The Practical Series website template.
+
+A website to be a template for the publication of web based (technical) books
+and documents for engineering and software development.
+
+The template as it stands is an empty (mostly) framework designed to hold
+whatever document or publication is directed at it. It’s well set out, has a
+range of nice and consistent styles and navigations that can be used with
+almost no effort. It has plenty of instructions for what to do and when. It’s
+consistent in its appearance and is (relatively) easy to use; there’s even
+some maths and geometry involved in the columns and how they work.
+
+*******************************************************************************
+MODIFICATION HISTORY:
+
+This is a complete summary of all software modifications.
+
+Date          Issue        Author         Reason for Modification
+*******************************************************************************
+28 Mar 2019   D01          M. Gledhill    Based on PS1001-web-template P14
+******************************************************************************* -->
+
+
+<!-- **************************************************************************
+     FAVICON
+     ***********************************************************************-->
+        <!-- favicons all platforms --> <link rel="apple-touch-icon" sizes="180x180" href="11-resources/02-images/01-favicons/apple-touch-icon.png">
+                                        <link rel="icon" type="image/png" href="11-resources/02-images/01-favicons/favicon-32x32.png" sizes="32x32">
+                                        <link rel="icon" type="image/png" href="11-resources/02-images/01-favicons/favicon-16x16.png" sizes="16x16">
+                                        <link rel="manifest" href="11-resources/02-images/01-favicons/manifest.json">
+                                        <link rel="mask-icon" href="11-resources/02-images/01-favicons/safari-pinned-tab.svg">
+                                        <meta name="theme-color" content="#ffffff">
+
+
+<!-- **************************************************************************
+     HEAD SCRIPT AREA
+     ***********************************************************************-->
+        <!-- jQuery Library -->         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Waypoints (sticky nav) --> <script src="21-global/05-js/jquery.waypoints.min.js"></script>
+        <!-- Hyphenator -->             <script src="21-global/05-js/hyphenator.js"></script>
+        <!-- Lightbox -->               <script src="21-global/05-js/lightbox.js"></script>
+        <!-- Prettify (main) -->        <script src="21-global/05-js/run_prettify.js?autoload=true&lang=css"></script>
+        <!-- MathJax -->                <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async></script>
+        <!-- PS main script -->         <script src="11-resources/05-js/script.js"></script>
+                                                                <!-- ▼▼▼▼ CHANGE FOLDER ▼▼▼▼  -->
+        <!-- PS local scroll script --> <script src="01-pages/02-02-example/05-local-js/02-02-scroll.js"></script>
+
+
+<!-- **************************************************************************
+     HEAD CSS LOAD
+     ***********************************************************************-->
+        <!-- Load fonts -->             <link rel="stylesheet" type="text/css" href="21-global/03-fonts/ps-fonts.css">
+        <!-- Ionicons -->               <link rel="stylesheet" type="text/css" href="21-global/01-css/ionicons.min.css">
+        <!-- Normalise -->              <link rel="stylesheet" type="text/css" href="21-global/01-css/normalise.css">
+        <!-- Lightbox styles -->        <link rel="stylesheet" type="text/css" href="21-global/01-css/lightbox.css">
+        <!-- PS grid system -->         <link rel="stylesheet" type="text/css" href="11-resources/01-css/grid.css">
+        <!-- PS main styles -->         <link rel="stylesheet" type="text/css" href="11-resources/01-css/style.css">
+                                                                <!-- ▼▼▼▼ CHANGE FOLDER ▼▼▼▼  -->
+        <!-- Code frag highlights      <link rel="stylesheet" type="text/css" href="01-pages/02-02-example/01-local-css/02-02-codeline.css"> -->
+
+
+<!-- **************************************************************************
+     TITLE
+     ***********************************************************************-->
+        <title>An example document part 2 | PracticalSeries: Website Template</title>
+    </head>
+
+    <body>
+
+
+<!-- ************************************************************************** [WP 000000]
+     HEADER (COVER & TABLE OF CONTENTS)
+     ***********************************************************************-->
+
+        <header id="js--000000">
+
+<!-- ************************************************************************** [WP 000001]
+     TOP NAVIGATION (ABOVE CONTENTS LIST)
+     ***********************************************************************-->
+
+            <nav>                                               <!-- Start of top nav bar     -->
+                <div class="top-nav">                           <!-- Start of top nav row     -->
+                    <div class="rg-row">                        <!-- Start of nav button row  -->
+                        <!-- Button 01 - Previous Section -->
+                        <a class="nav-wide" href="02-00-example.html#js--020100"><span class="top-nav-icon">l</span><span class="top-nav-text">Prev. section</span></a>
+                        <!-- Button 02 - Previous Chapter -->
+                        <a class="nav-wide" href="01-00-intro.html#js--000000"><span class="top-nav-icon">u</span><span class="top-nav-text">Prev. chapter</span></a>
+                        <!-- Button 03 - Home wide (hidden when fixed nav activates) -->
+                        <a class="nav-wide nav-home" href="index.html#js--000000"><span class="top-nav-text">Home</span><span class="top-nav-icon">h</span></a>
+                        <!-- Button 03a - Top narrow (hidden until fixed nav activates) -->
+                        <a class="nav-narrow js--sc-000000" href="#"><span class="top-nav-icon">t</span><span class="top-nav-text">Top</span></a>
+                        <!-- Button 03b - Home narrow (hidden until fixed nav activates) -->
+                        <a class="nav-narrow" href="index.html#js--000000"><span class="top-nav-text">Home</span><span class="top-nav-icon">h</span></a>
+                        <!-- Button 04 - Next Chapter -->
+                        <a class="nav-wide" href="80-00-finally.html#js--000000"><span class="top-nav-text">Next chapter</span><span class="top-nav-icon">d</span></a>
+                        <!-- Button 05 - Next section -->
+                        <a class="nav-wide" href="80-00-finally.html#js--000000"><span class="top-nav-text">Next section</span><span class="top-nav-icon">r</span></a>
+                    </div>                                      <!-- End of nav button row    -->
+                </div>                                          <!-- End of top nav row       -->
+            </nav>                                              <!-- End of top nav bar       -->
+<!-- ========================================================================== [WP END]      -->
+
+
+<!-- ************************************************************************** [WP TITLE]
+     TITLE BAR (Section number and text)
+     ***********************************************************************-->
+
+            <div class="rg-row title-row">                      <!-- Start of title row       -->
+                <div class="rg-col rg-span1-5">                 <!-- Start of left column     -->
+                    <aside class="rev-badge">                   <!-- BUILD BADGE              -->
+                        <img src="https://img.shields.io/badge/Development-D01-3F3F30.svg" alt="Build">
+                    </aside>
+                </div>                                          <!-- End of Left column       -->
+                <div class="rg-col rg-span3-5 title-centre">    <!-- Start of title           -->
+                   <div class="title-num-box"><p>2</p></div>
+                    <div class="title-text-box"><h1><span class="title-small-num">2</span>Fairfax WTW<br>An example document</h1></div>
+                </div>                                          <!-- End of title             -->
+                <div class="rg-col rg-span1-5">                 <!-- Start of right column    -->
+                    <aside class="aside-right-rev">             <!-- Start of right side bar  -->
+                    </aside>                                    <!-- End of right side bar    -->
+                </div>                                          <!-- End of right column      -->
+            </div>                                              <!-- End of title row         -->
+<!-- ========================================================================== [WP END]      -->
+
+
+<!-- ************************************************************************** [WP TOC]
+     TABLE OF CONTENTS
+     ***********************************************************************-->
+
+            <div class="rg-row">                                <!-- Start of TOC section     -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Left column (not used)   -->
+                <div class="rg-col rg-span3-5">                 <!-- Start of TOC column      -->
+
+               <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    TOC - A NOTE BY THE AUTHOR
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <ul class="toc-line">
+                        <li><a class="js--sc-020000x" href="02-00-example.html#js--020000x">
+                               <div class="toc-lev"><span class="toc-lev1lt-num"></span><span class="toc-lev1lt-text">A note by the author</span></div></a>
+                        </li>
+                    </ul>
+               <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    TOC - 2. Fairfax WTW
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <ul class="toc-line">
+<!-- Level 1 -->        <li><a class="js--sc-020000" href="02-00-example.html#js--020000">
+                               <div class="toc-lev"><span class="toc-lev1-num">2</span><span class="toc-lev1-text">Fairfax WTW &mdash; an example document</span></div></a>
+                        </li>
+                    </ul>
+
+                    <ul class="toc-list">
+<!-- Level 2 -->        <li><a class="js--sc-020100" href="02-00-example.html#js--020100">
+                            <div class="toc-lev"><span class="toc-lev2-num">2.1</span><span class="toc-lev2-text">The main areas of the plant</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-020101" href="02-00-example.html#js--020101">
+                            <div class="toc-lev"><span class="toc-lev3-num">2.1.1</span><span class="toc-lev3-text">Inlet works</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-020102" href="02-00-example.html#js--020102">
+                            <div class="toc-lev"><span class="toc-lev3-num">2.1.2</span><span class="toc-lev3-text">Filtration</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-020103" href="02-00-example.html#js--020103">
+                            <div class="toc-lev"><span class="toc-lev3-num">2.1.3</span><span class="toc-lev3-text">Outlet works</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-020104" href="02-00-example.html#js--020104">
+                            <div class="toc-lev"><span class="toc-lev3-num">2.1.4</span><span class="toc-lev3-text">Backwash services</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-020105" href="02-00-example.html#js--020105">
+                            <div class="toc-lev"><span class="toc-lev3-num">2.1.5</span><span class="toc-lev3-text">Ferric sulphate dosing</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-020106" href="02-00-example.html#js--020106">
+                            <div class="toc-lev"><span class="toc-lev3-num">2.1.6</span><span class="toc-lev3-text">Sodium hypochlorite dosing</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-020107" href="02-00-example.html#js--020107">
+                            <div class="toc-lev"><span class="toc-lev3-num">2.1.7</span><span class="toc-lev3-text">Other services: sampling &amp; monitoring</span></div></a>
+<!-- TOC PADDING  -->       <br class="top-pad">
+<!-- TOC PADDING  -->       <br class="top-pad">
+                        </li>
+<!-- Level 2 -->        <li><a class="js--sc-020200" href="02-02-example.html#js--020200">
+                            <div class="toc-lev"><span class="toc-lev2-num">2.2</span><span class="toc-lev2-text">An overview of the control system</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-020201" href="02-02-example.html#js--020201">
+                            <div class="toc-lev"><span class="toc-lev3-num">2.2.1</span><span class="toc-lev3-text">The automation system (AS)</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-020202" href="02-02-example.html#js--020202">
+                            <div class="toc-lev"><span class="toc-lev3-num">2.2.2</span><span class="toc-lev3-text">Remote input &amp; output (IO) racks</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-020203" href="02-02-example.html#js--020203">
+                            <div class="toc-lev"><span class="toc-lev3-num">2.2.3</span><span class="toc-lev3-text">The operator station server (OSS)</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-020204" href="02-02-example.html#js--020204">
+                            <div class="toc-lev"><span class="toc-lev3-num">2.2.4</span><span class="toc-lev3-text">The operator station clients (OSCs)</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-020205" href="02-02-example.html#js--020205">
+                            <div class="toc-lev"><span class="toc-lev3-num">2.2.5</span><span class="toc-lev3-text">The engineering station (ES)</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-020206" href="02-02-example.html#js--020206">
+                            <div class="toc-lev"><span class="toc-lev3-num">2.2.6</span><span class="toc-lev3-text">The terminal bus network</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-020207" href="02-02-example.html#js--020207">
+                            <div class="toc-lev"><span class="toc-lev3-num">2.2.7</span><span class="toc-lev3-text">The plant bus network</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-020208" href="02-02-example.html#js--020208">
+                            <div class="toc-lev"><span class="toc-lev3-num">2.2.8</span><span class="toc-lev3-text">The ProfiBus network</span></div></a>
+                        </li>
+                    </ul>
+               <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                </div>                                          <!-- End of TOC column        -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Right column (not used)  -->
+            </div>                                              <!-- End of TOC section       -->
+<!-- ========================================================================== [WP END]      -->
+
+
+        </header>                                               <!-- End of header -->
+<!-- ========================================================================== [WP END] -->
+
+
+<!-- ************************************************************************** [WP FIXEDNAV]
+     FIXED NAVIGATION BAR CHANGEOVER POINT
+     ***********************************************************************-->
+        <div id="js--fixed-nav"></div>                          <!-- fixed navigation point   -->
+<!-- ========================================================================== [WP END]      -->
+
+
+
+<!-- ************************************************************************** [WP SECTION]
+     SECTION 2.2 - AN OVERVIEW OF THE CONTROL SYSTEM
+     ***********************************************************************-->
+
+        <section class="section-std" id="js--020200">           <!-- Start of section         -->
+            <div class="rg-row sub-title-row">                  <!-- Start of subtitle row    -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Left column (not used)   -->
+                <div class="rg-col rg-span3-5">                 <!-- Start of subtitle column -->
+                    <div class="sub-title-overline"></div>      <!-- Overline                 -->
+                 <div class="sub-title-num-box"><h2>2.2</h2></div>
+                    <div class="sub-title-text-box"><h2>An overview of the control system</h2></div>
+                </div>                                          <!-- End of subtitle column   -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Right column (not used)  -->
+            </div>                                              <!-- End of Subtitle row      -->
+
+            <div class="rg-row">                                <!-- Start of section content -->
+                <div class="rg-col rg-span1-5">                 <!-- Start of left column     -->
+                <!--     <aside class="aside-left">                  Start of left side bar   -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of left column       -->
+
+                <div class="rg-col rg-span3-5">                 <!-- Start of section text    -->
+                    <p class="hyp"><span class="all-caps">The water treatment works</span> will be controlled by a <span class="first-use">Siemens Simatic Process Control System</span> (PCS&nbsp;7 system). This system has four basic components, the <span class="first-use">Automation Systems</span> (AS), the <span class="first-use">Operator Station Server</span> (OSS), the <span class="first-use">Operator Station clients</span> (OSC) and the <span class="first-use">Engineering Station</span> (ES).</p>
+
+                    <p class="hyp">The Automation Systems interface directly with the plant and control the plant devices (motors, valves &c.) and instrumentation (flow, level, pressure sensors etc.).</p>
+
+                    <p class="hyp">The Operator Station Server (hereafter just the Server or OSS) interfaces with the Automation Systems and collates the data from those systems (instrument reading, device status, events etc.).</p>
+
+                    <p class="hyp">The Server will also identify alarm conditions within the process itself, within devices and within instrumentation. These conditions along with critical plant data will be logged and stored for offline analysis.</p>
+
+                    <p class="hyp">The Operator Station Clients provide the operator interface to the plant &mdash; allowing the operator to start and stop automated processes, change set-points, take manual control of plant devices and generally operate the plant. The OSCs also provides a visual representation of the plant, allowing the operator to monitor the state of the plant devices (stopped, running, opened, closed, in fault etc.) and react to anomalous conditions within the plant. Each OSC communicates with the Server, reading the data to be displayed and writing operator instructions to the system. </p>
+
+                    <p class="hyp">The Engineering Station is used to configure (programme) the system.</p>
+
+                    <p class="hyp">PCS&nbsp;7 has its own standard library of objects (referred to as the <span class="first-use">Advanced Process Library</span> or APL) and this library will be used as the basis for all devices, instrumentation and graphical representations. </p>
+
+                </div>                                          <!-- End of section text      -->
+
+                <div class="rg-col rg-span1-5">                 <!-- Start of right column    -->
+                <!--     <aside class="aside-right">                 Start of right side bar  -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of right column      -->
+            </div>                                              <!-- End of section content   -->
+        </section>                                              <!-- End of section           -->
+<!-- ========================================================================== [WP END]      -->
+
+
+<!-- ************************************************************************** [WP ADDITIONAL]
+     SECTION - ADDITIONAL ROW
+     ***********************************************************************-->
+
+        <div class="section-std" id="js--980101b">              <!-- Start of additional row  -->
+            <div class="rg-row">                                <!-- Start of row content     -->
+                <div class="rg-col rg-span1-5">                 <!-- Start of left column     -->
+                    <aside class="aside-left">                  <!-- Start of left side bar   -->
+                        <p><em>EEMUA</em><br> Engineering Equipment and Materials Users' Association</p>
+                    </aside>                                    <!-- End of left side bar     -->
+                 </div>                                         <!-- End of left column       -->
+
+                <div class="rg-col rg-span3-5">                 <!-- Start of section text    -->
+
+                    <p class="hyp">The APL is compliant with the current engineering standards for alarm management and process control graphics (these are the EEMUA&nbsp;192 and 201 standards respectively).</p>
+
+                    <p class="hyp">The control system is constructed around a three network architecture: <span class="first-use">terminal bus</span> (linking the OSCs to the Server), <span class="first-use">plant bus</span> (linking the Server to the Automation Systems) and <span class="first-use">field bus</span> (linking the Automation Systems to the plant equipment). A schematic of this arrangement is shown in <a class="xref js--sc-f02-02" href="#">Figure 2.2</a></p>
+
+                    <p class="hyp">Of the three networks, the terminal bus and plant bus are <span class="first-use">Ethernet</span> networks and the field bus is a <span class="first-use">ProfiBus DP</span> (distributed peripheral) network.</p>
+
+                    <p class="hyp">The electrical signals from the plant devices and instruments are wired to the remote IO racks; these are situated in various panels distributed throughout the plant; these remote IO racks transmit the various status signals from the device to their associated AS. Similarly, commands from the AS (open/close, start/stop etc.) are passed to the devices by the remote IO racks.</p>
+
+                    <p class="hyp">All signals to and from the remote IO racks are transmitted across the ProfiBus DP (field bus) networks.</p>
+
+                    <p class="hyp">The configuration used to control the water treatment works consists of:</p>
+
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      UNNUMBERED LIST
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <ul class="list-no-num">                    <!-- Start of unnumbered list -->
+                        <li><p class="hyp">1&nbsp;&times;&nbsp;Server</p></li>
+
+                        <li><p class="hyp">2&nbsp;&times;&nbsp;Operator Station Clients (control room and filter house)</p></li>
+
+                        <li><p class="hyp">2&nbsp;&times;&nbsp;Automation Systems</p></li>
+
+                        <li><p class="hyp">6&nbsp;&times;&nbsp;remote IO racks distributed around the plant</p></li>
+
+                        <li><p class="hyp">1&nbsp;&times;&nbsp;Engineering Station (located in the control room)</p></li>
+                    </ul>                                       <!-- End of unnumbered list   -->
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     LIGHTBOX FIGURE - SINGLE FIGURE FULL PAGE WIDTH (748 px)
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <div class="fig-row">
+<!-- Image -->          <figure class="fig-col fig1-1" id="js--f02-02">
+                            <a href="01-pages/02-02-example/02-images/fig-02-02.svg" data-lightbox="fig-set" data-title="Figure 2.2 - Control system architecture schematic">
+                                <img src="01-pages/02-02-example/02-images/fig-02-02.svg" alt="Figure 2.2 - Control system architecture schematic">
+                            </a>
+                            <figcaption>Figure 2.2 &emsp; Control system architecture schematic</figcaption>
+                        </figure>
+                    </div>
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                </div>                                          <!-- End of section text      -->
+
+                <div class="rg-col rg-span1-5">                 <!-- Start of right column    -->
+                <!--     <aside class="aside-right">                 Start of right side bar  -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of right column      -->
+            </div>                                              <!-- End of section content   -->
+        </div>                                                  <!-- End of section           -->
+<!-- ========================================================================== [WP END]      -->
+
+
+<!-- ************************************************************************** [WP SUBSECTION]
+     SUBSECTION 2.2.1 - THE AUTOMATION SYSTEM
+     ***********************************************************************-->
+
+        <section class="section-std" id="js--020201">           <!-- Start of section         -->
+            <div class="rg-row sub-title-row">                  <!-- Start of subtitle row    -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Left column (not used)   -->
+                <div class="rg-col rg-span3-5">                 <!-- Start of subtitle column -->
+                    <div class="sub-title-num-box"><h3>2.2.1</h3></div>
+                    <div class="sub-title-text-box"><h3>The Automation Systems (AS)</h3></div>
+                </div>                                          <!-- End of subtitle column   -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Right column (not used)  -->
+            </div>                                              <!-- End of Subtitle row -->
+
+            <div class="rg-row">                                <!-- Start of section content -->
+                <div class="rg-col rg-span1-5">                 <!-- Start of left column     -->
+                <!--     <aside class="aside-left">                  Start of left side bar   -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of left column       -->
+
+                <div class="rg-col rg-span3-5">                 <!-- Start of section text    -->
+
+                    <p class="hyp">The plant is controlled by two AS units one using the 417&#8209;4&nbsp;CPU, controlling the main plant (inlet, filtration and outlet) and a smaller unit using the 414&#8209;3&nbsp;CPU controlling the dosing systems.</p>
+
+                    <p class="hyp">The plant is controlled by the AS units; these are programmed by a Siemens proprietary programming package (<span class="first-use">Simatic Manager</span>) and support both continuous control and sequential control. The continuous functions (those functions that are always executed) are written using the <span class="first-use">continuous flow chart</span> (CFC) programming language; sequential operations are written using the <span class="first-use">sequential flow chart</span> (SFC) programming language.</p>
+
+                    <p class="hyp">Special user defined functions are also supported by the AS units; these are written in a derivative of Pascal called <span class="first-use">structured control language</span> (SCL).</p>
+
+                    <p class="hyp">All three of these languages: CFC, SFC and SCL are compliant with the IEC 61161-3<sup>&dagger;1</sup> standard.</p>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     TABLE - FOOTNOTE
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <table class="table-fnote" id="js--fn01">
+                        <tr>
+                            <th class="fnote-top" style="width: 10%"></th>
+                            <th class="fnote-top" style="width: 10%"></th>
+                            <th class="fnote-top" style="width: 20%"></th>
+                            <th style="width: 60%"></th>
+                        </tr>
+                        <tr>
+<!-- Footnote number -->    <td class="table-left"><em>&dagger;1</em></td>
+<!-- Footnote text below --><td class="table-left"></td>
+                            <td colspan="2" class="table-left">IEC 61131-3 (2013) is the International Electro-technical Commission standard specifying the syntax and semantics for a unified series of programming languages for programmable logic controllers (PLCs).</td>
+                        </tr>
+                    </table>
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                </div>                                          <!-- End of section text area   -->
+
+                <div class="rg-col rg-span1-5">                 <!-- Start of right column   -->
+                <!--     <aside class="aside-right">                 Start of right side bar -->
+                <!--         <p></p>                                 Side bar content        -->
+                <!--     </aside>                                    End of right side bar   -->
+                </div>                                          <!-- End of right column     -->
+            </div>                                              <!-- End of section content -->
+        </section>                                              <!-- End of section -->
+<!-- ========================================================================== [WP END] -->
+
+
+<!-- ************************************************************************** [WP 020202]
+     SUBSECTION 2.2.2 - REMOTE IO
+     ***********************************************************************-->
+
+        <section class="section-std" id="js--020202">           <!-- Start of section -->
+            <div class="rg-row sub-title-row">                  <!-- Start of subtitle row (section number & heading) -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Left column (not used for subtitle) -->
+                <div class="rg-col rg-span3-5">                 <!-- Start of subtitle column (centre column) -->
+                    <!-- <div class="sub-title-overline"></div>      OVERLINE IF NEEDED -->
+                    <div class="sub-title-num-box"><h3>2.2.2</h3></div>
+                    <div class="sub-title-text-box"><h3>Remote input and output (IO) racks</h3></div>
+                </div>                                          <!-- End of subtitle column (centre column) -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Right column (not used for subtitle) -->
+            </div>                                              <!-- End of Subtitle row -->
+
+            <div class="rg-row">                                <!-- Start of section content -->
+                <div class="rg-col rg-span1-5">                 <!-- Start of left column   -->
+                <!--     <aside class="aside-left">                  Start of left side bar -->
+                <!--         <p></p>                                 Side bar content       -->
+                <!--     </aside>                                    End of left side bar   -->
+                </div>                                          <!-- End of left column     -->
+
+                <div class="rg-col rg-span3-5 section-text">    <!-- Start of section text area -->
+
+                    <p class="hyp">All the device signals are hardwired to remote <span class="first-use">input and output</span> (IO) racks, each IO rack is located in one of the electrical panels positioned around the plant. The following is a list of the electrical panel, their location and the remote IO racks they contain (<a class="xref js--sc-t02-02" href="#">Table 2.2</a>).</p>
+
+                    <p class="hyp">The locations of the panels around the site are shown on the site general arrangement drawing <a class="xref js--sc-f02-03" href="#">Figure 2.3</a>.</p>
+
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TABLE - STANDARD TABLE WITH BOTTOM BORDERS
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <table class="table-clean" id="js--t02-02">
+<!-- Header row -->     <tr>
+                            <th class="leading"></th>
+                            <th class="table-left" style="width: 11%">Panel</th>
+                            <th class="table-left" style="width: 26.68%">Location</th>
+                            <th class="table-left" style="width: 26.68%">IO Rack</th>
+                            <th class="table-left" style="width: 35.64%">Description</th>
+                        </tr>
+ <!-- Data row -->      <tr>
+                            <td class="leading"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">E001</td>
+                            <td class="table-left">Auxiliary Room</td>
+                            <td class="table-left">None</td>
+                            <td class="table-left">Main server panel</td>
+                        </tr>
+<!-- Data row -->       <tr>
+                            <td class="leading"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">E002</td>
+                            <td class="table-left">Auxiliary Room</td>
+                            <td class="table-left">AS01-Rack 01</td>
+                            <td class="table-left">Inlet works &amp; services control</td>
+                        </tr>
+<!-- Data row -->       <tr>
+                            <td class="leading"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">E003</td>
+                            <td class="table-left">Cavendish valve house</td>
+                            <td class="table-left">AS01-Rack 02</td>
+                            <td class="table-left">Cavendish feed flow control</td>
+                        </tr>
+<!-- Data row -->       <tr>
+                            <td class="leading"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">E004</td>
+                            <td class="table-left">Coverley  valve house</td>
+                            <td class="table-left">AS01-Rack 03</td>
+                            <td class="table-left">Coverley  feed flow control</td>
+                        </tr>
+<!-- Data row -->       <tr>
+                            <td class="leading"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">E101</td>
+                            <td class="table-left">Filter house</td>
+                            <td class="table-left">AS01-Rack 04</td>
+                            <td class="table-left">Filter &amp; backwash control</td>
+                        </tr>
+<!-- Data row -->       <tr>
+                            <td class="leading"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">E401</td>
+                            <td class="table-left">Outlet works</td>
+                            <td class="table-left">AS01-Rack 05</td>
+                            <td class="table-left">Outlet works control</td>
+                        </tr>
+<!-- Data row -->       <tr>
+                            <td class="leading"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">E601</td>
+                            <td class="table-left">Dosing room</td>
+                            <td class="table-left">AS02-Rack 01</td>
+                            <td class="table-left">Dosing control</td>
+                        </tr>
+<!-- Caption -->        <tr class="no-border">
+                            <td class="leading"></td>
+                            <td colspan="4" class="table-caption">Table 2.2 &emsp; Electrical panels &amp; remote IO racks</td>
+                        </tr>
+                    </table>
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                    <p class="hyp">Each IO rack is connected to its associated AS via a ProfiBus network. There are two ProfiBus networks, one for AS01 and one for AS02 (see <a class="hlink js--sc-020208" href="#">&sect;&nbsp;2.2.8</a>)</p>
+
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     LIGHTBOX FIGURE - SINGLE FIGURE FULL PAGE WIDTH (748 px)
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <div class="fig-row">
+<!-- Image -->          <figure class="fig-col fig1-1" id="js--f02-03">
+                            <a href="01-pages/02-02-example/02-images/fig-02-03.png" data-lightbox="fig-set" data-title="Figure 2.3 - Fairfax WTW site general arrangement">
+                                <img src="01-pages/02-02-example/02-images/fig-02-03.png" alt="Figure 2.3 - Fairfax WTW site general arrangement">
+                            </a>
+                            <figcaption>Figure 2.2 &emsp; Control system architecture schematic</figcaption>
+                        </figure>
+                    </div>
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                </div>                                          <!-- End of section text      -->
+
+                <div class="rg-col rg-span1-5">                 <!-- Start of right column    -->
+                <!--     <aside class="aside-right">                 Start of right side bar  -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of right column      -->
+            </div>                                              <!-- End of section content   -->
+        </section>                                              <!-- End of section           -->
+<!-- ========================================================================== [WP END]      -->
+
+
+<!-- ************************************************************************** [WP SUBSECTION]
+     SUBSECTION 2.2.3 - THE OPERATOR STATION SERVER (OSS)
+     ***********************************************************************-->
+
+        <section class="section-std" id="js--020203">           <!-- Start of section         -->
+            <div class="rg-row sub-title-row">                  <!-- Start of subtitle row    -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Left column (not used)   -->
+                <div class="rg-col rg-span3-5">                 <!-- Start of subtitle column -->
+                    <div class="sub-title-num-box"><h3>2.2.3</h3></div>
+                    <div class="sub-title-text-box"><h3>The Operator Station Server (OSS)</h3></div>
+                </div>                                          <!-- End of subtitle column   -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Right column (not used)  -->
+            </div>                                              <!-- End of Subtitle row -->
+
+            <div class="rg-row">                                <!-- Start of section content -->
+                <div class="rg-col rg-span1-5">                 <!-- Start of left column     -->
+                <!--     <aside class="aside-left">                  Start of left side bar   -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of left column       -->
+
+                <div class="rg-col rg-span3-5">                 <!-- Start of section text    -->
+
+                    <p class="hyp">The Fairfax WTW control system has a multiple station operator system consisting of two Operator Station Clients and one Operator Station Server. The Server connects to the two AS units and reads the process data (process values, alarms messages etc.) from the AS units and writes any operator commands to the AS units. The server also manages the archiving of process data for trending and historical records; and manages the users of the system.</p>
+
+                    <p class="hyp">Whilst not an operator station in itself (it does not, for example, display plant mimics etc.) it does make all the system data available to the system operators via the OSCs.</p>
+
+                    <p class="hyp">The OSS is a Dell PowerEdge R630 rack mounted server running the Windows Server 2008 R2 (service pack 1) operating system.</p>
+
+                    <p class="hyp">The OSS has two network interfaces (both Ethernet based): firstly the Plant Bus network used to connect the Server to the AS units (see <a class="hlink js--sc-020207" href="#">&sect;&nbsp;2.2.7</a>); and secondly the Terminal Bus, used to connect the Server to the two OSCs (see <a class="hlink js--sc-020206" href="#">&sect;&nbsp;2.2.6</a>).</p>
+
+                </div>                                          <!-- End of section text      -->
+
+                <div class="rg-col rg-span1-5">                 <!-- Start of right column    -->
+                <!--     <aside class="aside-right">                 Start of right side bar  -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of right column      -->
+            </div>                                              <!-- End of section content   -->
+        </section>                                              <!-- End of section           -->
+<!-- ========================================================================== [WP END]      -->
+
+
+<!-- ************************************************************************** [WP SUBSECTION]
+     SUBSECTION 2.2.4 - THE OPERATOR STATIONS CLIENTS (OSC)
+     ***********************************************************************-->
+
+        <section class="section-std" id="js--020204">           <!-- Start of section         -->
+            <div class="rg-row sub-title-row">                  <!-- Start of subtitle row    -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Left column (not used)   -->
+                <div class="rg-col rg-span3-5">                 <!-- Start of subtitle column -->
+                    <div class="sub-title-num-box"><h3>2.2.4</h3></div>
+                    <div class="sub-title-text-box"><h3>The Operator Stations Clients (OSC)</h3></div>
+                </div>                                          <!-- End of subtitle column   -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Right column (not used)  -->
+            </div>                                              <!-- End of Subtitle row -->
+
+            <div class="rg-row">                                <!-- Start of section content -->
+                <div class="rg-col rg-span1-5">                 <!-- Start of left column     -->
+                <!--     <aside class="aside-left">                  Start of left side bar   -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of left column       -->
+
+                <div class="rg-col rg-span3-5">                 <!-- Start of section text    -->
+
+                    <p class="hyp">The two Operator Station Clients form the interface between the operator and the plant; the operator can, from either OSC, see the state of the plant from the process mimics, has access to all alarm information and can control the plant by issuing commands.</p>
+
+                    <p class="hyp">Both OSCs have the same user interface and the operator can control any part of the system from either OSC.</p>
+
+                    <p class="hyp">Each operator has an individual logon for the system (administered by the OSS) and can logon to either OSC. Different users have different privileges within the system and depending on the level of privilege can perform different actions within the system.</p>
+
+                    <p class="hyp">The two OSC are linked to the Server via the Terminal Bus network (see <a class="hlink js--sc-020206" href="#">&sect;&nbsp;2.2.6</a>).</p>
+
+                    <p class="hyp">Both OSCs are Dell T5810 Precision Workstations running Windows 7 Ultimate (service pack 1).</p>
+
+                </div>                                          <!-- End of section text      -->
+
+                <div class="rg-col rg-span1-5">                 <!-- Start of right column    -->
+                <!--     <aside class="aside-right">                 Start of right side bar  -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of right column      -->
+            </div>                                              <!-- End of section content   -->
+        </section>                                              <!-- End of section           -->
+<!-- ========================================================================== [WP END]      -->
+
+
+<!-- ************************************************************************** [WP SUBSECTION]
+     SUBSECTION 2.2.5 - THE ENGINEERING STATION (ES)
+     ***********************************************************************-->
+
+        <section class="section-std" id="js--020205">           <!-- Start of section         -->
+            <div class="rg-row sub-title-row">                  <!-- Start of subtitle row    -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Left column (not used)   -->
+                <div class="rg-col rg-span3-5">                 <!-- Start of subtitle column -->
+                    <div class="sub-title-num-box"><h3>2.2.5</h3></div>
+                    <div class="sub-title-text-box"><h3>The Engineering Station (ES)</h3></div>
+                </div>                                          <!-- End of subtitle column   -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Right column (not used)  -->
+            </div>                                              <!-- End of Subtitle row -->
+
+            <div class="rg-row">                                <!-- Start of section content -->
+                <div class="rg-col rg-span1-5">                 <!-- Start of left column     -->
+                <!--     <aside class="aside-left">                  Start of left side bar   -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of left column       -->
+
+                <div class="rg-col rg-span3-5">                 <!-- Start of section text    -->
+
+                    <p class="hyp">The Engineering Station (ES) contains the engineering tools needed to configure the system; it is in essence the development platform for the system. It contains the following:</p>
+
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      UNNUMBERED LIST
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <ul class="list-no-num">                    <!-- Start of unnumbered list -->
+                        <li><p class="hyp">Hardware editors for managing the system components</p></li>
+
+                        <li><p class="hyp">Network configuration tools</p></li>
+
+                        <li><p class="hyp">Software development systems for the AS and OS systems</p></li>
+
+                        <li><p class="hyp">Deployment software for distributing the developed configurations to the various system components</p></li>
+                    </ul>                                       <!-- End of unnumbered list   -->
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                </div>                                          <!-- End of section text area   -->
+
+                <div class="rg-col rg-span1-5">                 <!-- Start of right column   -->
+                <!--     <aside class="aside-right">                 Start of right side bar -->
+                <!--         <p></p>                                 Side bar content        -->
+                <!--     </aside>                                    End of right side bar   -->
+                </div>                                          <!-- End of right column     -->
+            </div>                                              <!-- End of section content -->
+        </section>                                              <!-- End of section -->
+<!-- ========================================================================== [WP END] -->
+
+
+<!-- ************************************************************************** [WP SUBSECTION]
+     SUBSECTION 2.2.6 - THE TERMINAL BUS NETWORK
+     ***********************************************************************-->
+
+        <section class="section-std" id="js--020206">           <!-- Start of section         -->
+            <div class="rg-row sub-title-row">                  <!-- Start of subtitle row    -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Left column (not used)   -->
+                <div class="rg-col rg-span3-5">                 <!-- Start of subtitle column -->
+                    <div class="sub-title-num-box"><h3>2.2.6</h3></div>
+                    <div class="sub-title-text-box"><h3>The Terminal Bus network</h3></div>
+                </div>                                          <!-- End of subtitle column   -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Right column (not used)  -->
+            </div>                                              <!-- End of Subtitle row -->
+
+            <div class="rg-row">                                <!-- Start of section content -->
+                <div class="rg-col rg-span1-5">                 <!-- Start of left column     -->
+                <!--     <aside class="aside-left">                  Start of left side bar   -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of left column       -->
+
+                <div class="rg-col rg-span3-5">                 <!-- Start of section text    -->
+
+                    <p class="hyp">The Terminal Bus is a 1 Gb/s Ethernet (1000 Base T) network using the TCP/IP protocol; it connects the Server and the Engineering Station with the two OS Clients.</p>
+
+                    <p class="hyp">The Terminal Bus uses Siemens Scalance X-300 (copper wire type) industrial Ethernet switches to manage the network.</p>
+
+                </div>                                          <!-- End of section text      -->
+
+                <div class="rg-col rg-span1-5">                 <!-- Start of right column    -->
+                <!--     <aside class="aside-right">                 Start of right side bar  -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of right column      -->
+            </div>                                              <!-- End of section content   -->
+        </section>                                              <!-- End of section           -->
+<!-- ========================================================================== [WP END]      -->
+
+
+ <!-- ************************************************************************* [WP SUBSECTION]
+     SECTION 2.2.7 - THE PLANT BUS NETWORK
+     ***********************************************************************-->
+
+        <section class="section-std" id="js--020207">           <!-- Start of section         -->
+            <div class="rg-row sub-title-row">                  <!-- Start of subtitle row    -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Left column (not used)   -->
+                <div class="rg-col rg-span3-5">                 <!-- Start of subtitle column -->
+                    <div class="sub-title-num-box"><h3>2.2.7</h3></div>
+                    <div class="sub-title-text-box"><h3>The Plant Bus network</h3></div>
+                </div>                                          <!-- End of subtitle column   -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Right column (not used)  -->
+            </div>                                              <!-- End of Subtitle row -->
+
+            <div class="rg-row">                                <!-- Start of section content -->
+                <div class="rg-col rg-span1-5">                 <!-- Start of left column     -->
+                <!--     <aside class="aside-left">                  Start of left side bar   -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of left column       -->
+
+                <div class="rg-col rg-span3-5">                 <!-- Start of section text    -->
+
+                    <p class="hyp">The Plant Bus is a 100&nbsp;Mb/s Ethernet (100 Base T) network using the ISO<sup>&dagger;2</sup> protocol. It connect the Server and Engineering Station with the two AS units, it also allows communications to take place between the two AS units themselves.</p>
+
+                    <p class="hyp">The Plant Bus uses Siemens Scalance X-200 (copper wire type) industrial Ethernet switches to manage the network.</p>
+
+                    <p class="hyp">The Plant Bus network is configured as a redundant ring.</p>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     TABLE - FOOTNOTE
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <table class="table-fnote" id="js--fn02">
+                        <tr>
+                            <th class="fnote-top" style="width: 10%"></th>
+                            <th class="fnote-top" style="width: 10%"></th>
+                            <th class="fnote-top" style="width: 20%"></th>
+                            <th style="width: 60%"></th>
+                        </tr>
+                        <tr>
+<!-- Footnote number -->    <td class="table-left"><em>&dagger;1</em></td>
+<!-- Footnote text below --><td class="table-left"></td>
+                            <td colspan="2" class="table-left">The ISO Industrial Ethernet protocol is a communication protocol based on the media access control (MAC) address of a device; it is both faster and more secure than TCP/IP and is exclusively used when communicating with the AS units.</td>
+                        </tr>
+                    </table>
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                </div>                                          <!-- End of section text      -->
+
+                <div class="rg-col rg-span1-5">                 <!-- Start of right column    -->
+                <!--     <aside class="aside-right">                 Start of right side bar  -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of right column      -->
+            </div>                                              <!-- End of section content   -->
+        </section>                                              <!-- End of section           -->
+<!-- ========================================================================== [WP END]      -->
+
+<!-- ************************************************************************** [WP SUBSECTION]
+     SUBSECTION 2.2.8 - THE PROFIBUS NETWORK
+     ***********************************************************************-->
+
+        <section class="section-std" id="js--020208">           <!-- Start of section         -->
+            <div class="rg-row sub-title-row">                  <!-- Start of subtitle row    -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Left column (not used)   -->
+                <div class="rg-col rg-span3-5">                 <!-- Start of subtitle column -->
+                    <div class="sub-title-num-box"><h3>2.2.8</h3></div>
+                    <div class="sub-title-text-box"><h3>The ProfiBus network</h3></div>
+                </div>                                          <!-- End of subtitle column   -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Right column (not used)  -->
+            </div>                                              <!-- End of Subtitle row -->
+
+            <div class="rg-row">                                <!-- Start of section content -->
+                <div class="rg-col rg-span1-5">                 <!-- Start of left column     -->
+                <!--     <aside class="aside-left">                  Start of left side bar   -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of left column       -->
+
+                <div class="rg-col rg-span3-5">                 <!-- Start of section text    -->
+
+                    <p class="hyp">The ProfiBus network is used to connect the two AS units to their remote IO racks; there are two ProfiBus networks: the first links AS01 to its five remote IO racks (see <a class="xref js--sc-t02-02" href="#">Table 2.2</a>), the second links AS02 to its single remote IO rack; the two networks are independent and are not connected together in any way.</p>
+
+                    <p class="hyp">Both ProfiBus networks are of the distributed peripheral (ProfiBus DP) type and are configured to carry remote IO signals to the AS units. Both networks communicate at 1.5&nbsp;Mb/s.</p>
+
+                </div>                                          <!-- End of section text      -->
+
+                <div class="rg-col rg-span1-5">                 <!-- Start of right column    -->
+                <!--     <aside class="aside-right">                 Start of right side bar  -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of right column      -->
+            </div>                                              <!-- End of section content   -->
+        </section>                                              <!-- End of section           -->
+<!-- ========================================================================== [WP END]      -->
+
+
+<!-- ************************************************************************** [WP LAST]
+     SECTION - LAST SECTION BEFORE FOOTER (WITH NAVIGATION)
+     ***********************************************************************-->
+
+        <p> <br class="toc-pad"></p>
+        <p> <br class="toc-pad"></p>
+        <div class="section-std" id="js--999901">               <!-- Start of additional row  -->
+            <div class="rg-row">                                <!-- Start of row content     -->
+                <div class="rg-col rg-span1-5">                 <!-- Start of left column     -->
+                    <aside class="aside-nav">                   <!-- Start of sidebar nav     -->
+                        <a class="xref" href="02-00-example.html#js--020100">Prev</a>
+                    </aside>                                    <!-- End of left side bar     -->
+                </div>                                          <!-- End of left column       -->
+
+                <div class="rg-col rg-span3-5 aside-nav">       <!-- Start of end image area  -->
+                    <img src="11-resources/01-css/01-css-images/end-mark.svg" alt="End flourish image">
+                </div>                                          <!-- End of section text area -->
+
+                <div class="rg-col rg-span1-5">                 <!-- Start of right column    -->
+                    <aside class="aside-nav">                   <!-- Start of sidebar nav     -->
+                        <a class="xref" href="80-00-finally.html#js--000000">Next</a>
+                    </aside>                                    <!-- End of right side bar    -->
+                </div>                                          <!-- End of right column      -->
+            </div>                                              <!-- End of row content       -->
+        </div>                                                  <!-- End of additional row    -->
+<!-- ========================================================================== [WP END]      -->
+
+
+<!-- ************************************************************************** [WP FOOTER]
+     FOOTER
+     ***********************************************************************-->
+        <footer class="footer">                                 <!-- Start of footer          -->
+            <ul class="footer-nav">                             <!-- Start of footer nav      -->
+                <li><a class="js--sc-000000" href="#"><span class="top-nav-icon" style="color:#5b7daf">t</span>Top</a><span class="footer-spacer">&#x25C7;</span></li>
+                <li><a href="80-00-finally.html#js--800100">Contact MG</a><span class="footer-spacer">&#x25C7;</span></li>
+                <li><a href="80-00-finally.html#js--800200">Acknowledgments</a><span class="footer-spacer">&#x25C7;</span></li>
+                <li><a href="80-00-finally.html#js--800300">Colophon</a><span class="footer-spacer">&#x25C7;</span></li>
+                <li><a href="80-00-finally.html#js--800400">Legal &amp; Privacy</a></li>
+            </ul>                                               <!-- End of footer nav        -->
+        </footer>                                               <!-- End of footer            -->
+<!-- ========================================================================== [WP END]      -->
+
+    </body>
+</html>

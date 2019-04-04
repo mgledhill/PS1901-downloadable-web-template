@@ -1,0 +1,576 @@
+<!DOCTYPE html>                                                                 <!-- HTML 5 file -->
+
+<!-- PRACTICALSERIES (c) 2016
+
+*******************************************************************************
+
+PRACTICALSERIES: Practical Series of Publications by Michael Gledhill
+                 Published in the United Kingdom
+
+                 Email: mg@practicalseries.com
+                 Web:   https://practicalseries.com
+
+*************************************************************************** -->
+
+<html lang="en">                                                                <!-- Declare language                              -->
+    <head>                                                                      <!-- Start of head section                         -->
+        <meta charset="utf-8">                                                  <!-- Use unicode char set (< 1024 char from SOF)   -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Make page follow browser width and reset zoom -->
+        <meta name="description" content="A template for building a website">
+
+<!-- ==========================================================================
+
+
+
+*******************************************************************************
+Title :          WEBSITE TEMPLATE                                    INDEX.HTML
+*******************************************************************************
+DETAILS
+
+The Practical Series website template.
+
+A website to be a template for the publication of web based (technical) books
+and documents for engineering and software development.
+
+The template as it stands is an empty (mostly) framework designed to hold
+whatever document or publication is directed at it. It’s well set out, has a
+range of nice and consistent styles and navigations that can be used with
+almost no effort. It has plenty of instructions for what to do and when. It’s
+consistent in its appearance and is (relatively) easy to use; there’s even
+some maths and geometry involved in the columns and how they work.
+
+*******************************************************************************
+MODIFICATION HISTORY:
+
+This is a complete summary of all software modifications.
+
+Date          Issue        Author         Reason for Modification
+*******************************************************************************
+28 Mar 2019   D01          M. Gledhill    Based on PS1001-web-template P14
+******************************************************************************* -->
+
+
+<!-- **************************************************************************
+     FAVICON
+     ***********************************************************************-->
+        <!-- favicons all platforms --> <link rel="apple-touch-icon" sizes="180x180" href="11-resources/02-images/01-favicons/apple-touch-icon.png">
+                                        <link rel="icon" type="image/png" href="11-resources/02-images/01-favicons/favicon-32x32.png" sizes="32x32">
+                                        <link rel="icon" type="image/png" href="11-resources/02-images/01-favicons/favicon-16x16.png" sizes="16x16">
+                                        <link rel="manifest" href="11-resources/02-images/01-favicons/manifest.json">
+                                        <link rel="mask-icon" href="11-resources/02-images/01-favicons/safari-pinned-tab.svg">
+                                        <meta name="theme-color" content="#ffffff">
+
+
+<!-- **************************************************************************
+     HEAD SCRIPT AREA
+     ***********************************************************************-->
+        <!-- jQuery Library -->         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Waypoints (sticky nav) --> <script src="21-global/05-js/jquery.waypoints.min.js"></script>
+        <!-- Hyphenator -->             <script src="21-global/05-js/hyphenator.js"></script>
+        <!-- Lightbox -->               <script src="21-global/05-js/lightbox.js"></script>
+        <!-- Prettify (main) -->        <script src="21-global/05-js/run_prettify.js?autoload=true&lang=css"></script>
+        <!-- MathJax                    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async></script> -->
+        <!-- PS main script -->         <script src="11-resources/05-js/script.js"></script>
+                                                                <!-- ▼▼▼▼ CHANGE FOLDER ▼▼▼▼  -->
+        <!-- PS local scroll script --> <script src="01-pages/00-00-index/05-local-js/00-00-scroll.js"></script>
+
+
+<!-- **************************************************************************
+     HEAD CSS LOAD
+     ***********************************************************************-->
+        <!-- Load fonts -->             <link rel="stylesheet" type="text/css" href="21-global/03-fonts/ps-fonts.css">
+        <!-- Ionicons -->               <link rel="stylesheet" type="text/css" href="21-global/01-css/ionicons.min.css">
+        <!-- Normalise -->              <link rel="stylesheet" type="text/css" href="21-global/01-css/normalise.css">
+        <!-- Lightbox styles -->        <link rel="stylesheet" type="text/css" href="21-global/01-css/lightbox.css">
+        <!-- PS grid system -->         <link rel="stylesheet" type="text/css" href="11-resources/01-css/grid.css">
+        <!-- PS main styles -->         <link rel="stylesheet" type="text/css" href="11-resources/01-css/style.css">
+                                                                <!-- ▼▼▼▼ CHANGE FOLDER ▼▼▼▼  -->
+        <!-- Code frag highlights -->   <link rel="stylesheet" type="text/css" href="01-pages/00-00-index/01-local-css/00-00-codeline.css">
+
+
+<!-- **************************************************************************
+     TITLE
+     ***********************************************************************-->
+        <title>PracticalSeries: Website Template</title>
+    </head>
+
+    <body>
+
+
+<!-- ************************************************************************** [WP HEADER]
+     HEADER (COVER & TABLE OF CONTENTS)
+     ***********************************************************************-->
+
+        <header id="js--000000">
+
+<!-- ************************************************************************** [WP TOPNAV]
+     TOP NAVIGATION (ABOVE CONTENTS LIST)
+     ***********************************************************************-->
+
+            <nav class="nav-cover">                             <!-- Start of top nav bar     -->
+                <div class="top-nav">                           <!-- Start of top nav row     -->
+                    <div class="rg-row">                        <!-- Start of nav button row  -->
+                        <!-- Button 01 - Previous Section -->
+                        <div class="nav-wide" ></div>
+                        <!-- Button 02 - Previous Chapter -->
+                        <div class="nav-wide" ></div>
+                        <!-- Button 03 - Home wide (hidden when fixed nav activates) -->
+                        <div class="nav-wide nav-home" ></div>
+                        <!-- Button 03a - Top narrow (hidden until fixed nav activates) -->
+                        <a class="nav-narrow js--sc-000000" href="#"><span class="top-nav-icon">t</span><span class="top-nav-text">Top</span></a>
+                        <!-- Button 03b - Home narrow (hidden until fixed nav activates) -->
+                        <div class="nav-narrow"></div>
+                        <!-- Button 04 - Next Chapter -->
+                        <a class="nav-wide" href="01-00-intro.html#js--000000"><span class="top-nav-text">Next chapter</span><span class="top-nav-icon">d</span></a>
+                        <!-- Button 05 - Next section -->
+                        <a class="nav-wide" href="01-00-intro.html#js--000000"><span class="top-nav-text">Next section</span><span class="top-nav-icon">r</span></a>
+                    </div>                                      <!-- End of nav button row    -->
+                </div>                                          <!-- End of top nav row       -->
+            </nav>                                              <!-- End of top nav bar       -->
+<!-- ========================================================================== [WP END]      -->
+
+
+<!-- ************************************************************************** [WP TITLE]
+     COVER IMAGE
+     ***********************************************************************-->
+
+            <div class="rg-row">                                <!-- Start of title row       -->
+                  <div class="rg-col rg-span1-5">               <!-- Start of left column     -->
+                    <aside class="rev-badge" style="margin-top: 4rem;">
+                        <img src="https://img.shields.io/badge/Development-D01-3F3F30.svg" alt="Build">
+                    </aside>
+                </div>                                          <!-- End of Left column       -->
+                <div class="rg-col rg-span3-5">                 <!-- Start of title           -->
+                    <div class="cover-overline"></div>          <!-- Overline bar             -->
+                    <div class="cover-title">                   <!-- Start of cover title     -->
+                        <h1>Practical Series</h1>               <!-- Main title               -->
+                        <h2>A website template</h2>             <!-- Subtitle                 -->
+                        <h3>by Michael Gledhill</h3>            <!-- Author                   -->
+                    <!--<h4>Optional heading line</h4>               Optional line            -->
+                    </div>                                      <!-- End of cover title       -->
+                    <figure class="cover-fig">                  <!-- Start of cover figure    -->
+                        <img src="01-pages/00-00-index/02-images/fig-00-01.svg" alt="cover logo">
+                    </figure>                                   <!-- End of cover figure      -->
+                </div>                                          <!-- End of title             -->
+                <div class="rg-col rg-span1-5">                 <!-- Start of right column    -->
+                    <aside class="aside-right-rev" style="margin-top: 4rem;">
+                    </aside>                                    <!-- End of right side bar    -->
+                </div>                                          <!-- End of right column      -->
+            </div>                                              <!-- End of title row         -->
+<!-- ========================================================================== [WP END]      -->
+
+
+<!-- ************************************************************************** [WP FIXEDNAV]
+     FIXED NAVIGATION BAR CHANGEOVER POINT
+     ***********************************************************************-->
+        <div id="js--fixed-nav"></div>                       <!-- Determines fixed navigation point -->
+<!-- ========================================================================== [WP END] -->
+
+
+<!-- ************************************************************************** [WP TOC]
+     TABLE OF CONTENTS
+     ***********************************************************************-->
+
+            <div class="rg-row">                                <!-- Start of TOC section     -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Left column (not used)   -->
+                <div class="rg-col rg-span3-5">                 <!-- Start of TOC column      -->
+
+               <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    TOC - PRACTICAL SERIES
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <ul class="toc-line">
+<!-- Level 1 -->        <li><a class="js--sc-000100" href="../index.html">
+                               <div class="toc-lev"><span class="toc-lev1-num"></span><span class="toc-lev1-text">Practical Series Publications &mdash; Home Page</span></div></a>
+                        </li>
+                    </ul>
+
+               <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    TOC - A NOTE BY THE AUTHOR
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <ul class="toc-line">
+<!-- Level 1 -->        <li><a class="js--sc-000100" href="index.html#js--000100">
+                               <div class="toc-lev"><span class="toc-lev1lt-num"></span><span class="toc-lev1lt-text">A note by the author</span></div></a>
+                        </li>
+                    </ul>
+
+               <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    TOC - 1. introduction
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <ul class="toc-line">
+<!-- Level 1 -->        <li><a class="js--sc-010000" href="01-00-intro.html#js--010000">
+                               <div class="toc-lev"><span class="toc-lev1-num">1</span><span class="toc-lev1-text">Introduction</span></div></a>
+                        </li>
+                    </ul>
+
+                    <ul class="toc-list">
+<!-- Level 2 -->        <li><a class="js--sc-010100" href="01-00-intro.html#js--010100">
+                            <div class="toc-lev"><span class="toc-lev2-num">1.1</span><span class="toc-lev2-text">Where to start</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-010101" href="01-00-intro.html#js--010101">
+                            <div class="toc-lev"><span class="toc-lev3-num">1.1.1</span><span class="toc-lev3-text">Writing the website content</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-010102" href="01-00-intro.html#js--010102">
+                            <div class="toc-lev"><span class="toc-lev3-num">1.2.1</span><span class="toc-lev3-text">Configuring a web page</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-010103" href="01-00-intro.html#js--010103">
+                            <div class="toc-lev"><span class="toc-lev3-num">1.3.1</span><span class="toc-lev3-text">Transferring the content to the website</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-010104" href="01-00-intro.html#js--010104">
+                            <div class="toc-lev"><span class="toc-lev3-num">1.4.1</span><span class="toc-lev3-text">Images size and compression</span></div></a>
+                        </li>
+<!-- Level 2 -->        <li><a class="js--sc-010200" href="01-02-intro.html#js--010200">
+                            <div class="toc-lev"><span class="toc-lev2-num">1.2</span><span class="toc-lev2-text">The associated website</span></div></a>
+                        </li>
+                    </ul>
+
+               <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <br class="top-pad">
+
+               <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    TOC - 2. Fairfax WTW
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <ul class="toc-line">
+<!-- Level 1 -->        <li><a class="js--sc-020000" href="02-00-example.html#js--020000">
+                               <div class="toc-lev"><span class="toc-lev1-num">2</span><span class="toc-lev1-text">Fairfax WTW &mdash; an example document</span></div></a>
+                        </li>
+                    </ul>
+
+                    <ul class="toc-list">
+<!-- Level 2 -->        <li><a class="js--sc-020100" href="02-00-example.html#js--020100">
+                            <div class="toc-lev"><span class="toc-lev2-num">2.1</span><span class="toc-lev2-text">The main areas of the plant</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-020101" href="02-00-example.html#js--020101">
+                            <div class="toc-lev"><span class="toc-lev3-num">2.1.1</span><span class="toc-lev3-text">Inlet works</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-020102" href="02-00-example.html#js--020102">
+                            <div class="toc-lev"><span class="toc-lev3-num">2.1.2</span><span class="toc-lev3-text">Filtration</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-020103" href="02-00-example.html#js--020103">
+                            <div class="toc-lev"><span class="toc-lev3-num">2.1.3</span><span class="toc-lev3-text">Outlet works</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-020104" href="02-00-example.html#js--020104">
+                            <div class="toc-lev"><span class="toc-lev3-num">2.1.4</span><span class="toc-lev3-text">Backwash services</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-020105" href="02-00-example.html#js--020105">
+                            <div class="toc-lev"><span class="toc-lev3-num">2.1.5</span><span class="toc-lev3-text">Ferric sulphate dosing</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-020106" href="02-00-example.html#js--020106">
+                            <div class="toc-lev"><span class="toc-lev3-num">2.1.6</span><span class="toc-lev3-text">Sodium hypochlorite dosing</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-020107" href="02-00-example.html#js--020107">
+                            <div class="toc-lev"><span class="toc-lev3-num">2.1.7</span><span class="toc-lev3-text">Other services: sampling &amp; monitoring</span></div></a>
+<!-- TOC PADDING  -->       <br class="top-pad">
+<!-- TOC PADDING  -->       <br class="top-pad">
+                        </li>
+<!-- Level 2 -->        <li><a class="js--sc-020200" href="02-02-example.html#js--020200">
+                            <div class="toc-lev"><span class="toc-lev2-num">2.2</span><span class="toc-lev2-text">An overview of the control system</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-020201" href="02-02-example.html#js--020201">
+                            <div class="toc-lev"><span class="toc-lev3-num">2.2.1</span><span class="toc-lev3-text">The automation system (AS)</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-020202" href="02-02-example.html#js--020202">
+                            <div class="toc-lev"><span class="toc-lev3-num">2.2.2</span><span class="toc-lev3-text">Remote input &amp; output (IO) racks</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-020203" href="02-02-example.html#js--020203">
+                            <div class="toc-lev"><span class="toc-lev3-num">2.2.3</span><span class="toc-lev3-text">The operator station server (OSS)</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-020204" href="02-02-example.html#js--020204">
+                            <div class="toc-lev"><span class="toc-lev3-num">2.2.4</span><span class="toc-lev3-text">The operator station clients (OSCs)</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-020205" href="02-02-example.html#js--020205">
+                            <div class="toc-lev"><span class="toc-lev3-num">2.2.5</span><span class="toc-lev3-text">The engineering station (ES)</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-020206" href="02-02-example.html#js--020206">
+                            <div class="toc-lev"><span class="toc-lev3-num">2.2.6</span><span class="toc-lev3-text">The terminal bus network</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-020207" href="02-02-example.html#js--020207">
+                            <div class="toc-lev"><span class="toc-lev3-num">2.2.7</span><span class="toc-lev3-text">The plant bus network</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-020208" href="02-02-example.html#js--020208">
+                            <div class="toc-lev"><span class="toc-lev3-num">2.2.8</span><span class="toc-lev3-text">The ProfiBus network</span></div></a>
+                        </li>
+                    </ul>
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    TOC - 80 And finally
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <ul class="toc-line">
+                        <li>
+                            <br class="toc-pad">
+                            <a href="80-00-finally.html">
+                               <div class="toc-lev"><span class="toc-lev1-num"></span><span class="toc-lev1-text">And finally &hellip;</span></div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="toc-list">
+<!-- Level 2 -->        <li><a class="js--sc-800100" href="80-00-finally.html#js--800100">
+                            <div class="toc-lev"><span class="toc-lev2-num"></span><span class="toc-lev2-text">Contact MG</span></div></a>
+                        </li>
+<!-- Level 2 -->        <li><a class="js--sc-800200" href="80-00-finally.html#js--800200">
+                            <div class="toc-lev"><span class="toc-lev2-num"></span><span class="toc-lev2-text">Acknowledgements</span></div></a>
+                            <br class="top-pad">
+                        </li>
+<!-- Level 2 -->        <li><a class="js--sc-800300" href="80-00-finally.html#js--800300">
+                            <div class="toc-lev"><span class="toc-lev2-num"></span><span class="toc-lev2-text">Colophon</span></div></a>
+                        </li>
+<!-- Level 2 -->        <li><a class="js--sc-800400" href="80-00-finally.html#js--800400">
+                            <div class="toc-lev"><span class="toc-lev2-num"></span><span class="toc-lev2-text">Legal &amp; Privacy</span></div></a>
+                        </li>
+                    </ul>
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <div class="sub-title-text-box"><h4>Proforma &amp; typicals</h4></div>
+                    <div class="sub-title-thinline"></div>
+
+               <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    TOC - 98 Blank
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <ul class="toc-line">
+<!-- Level 1 -->        <li><a class="js--sc-980000" href="98-00-blank.html#js--000000">
+                               <div class="toc-lev"><span class="toc-lev1-num">98</span><span class="toc-lev1-text">Blank page</span></div></a>
+                        </li>
+                    </ul>
+
+                    <ul class="toc-list">
+<!-- Level 2 -->        <li><a class="js--sc-980100" href="98-00-blank.html#js--980100">
+                            <div class="toc-lev"><span class="toc-lev2-num">98.1</span><span class="toc-lev2-text">Empty Section</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-980101" href="98-00-blank.html#js--980101">
+                            <div class="toc-lev"><span class="toc-lev3-num">98.1.1</span><span class="toc-lev3-text">Empty subsection</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-980101a" href="98-00-blank.html#js--980101a">
+                            <div class="toc-lev"><span class="toc-lev3-num"></span><span class="toc-lev3-text">Empty inline section</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-980101b" href="98-00-blank.html#js--980101b">
+                            <div class="toc-lev"><span class="toc-lev3-num"></span><span class="toc-lev3-text">Additional section</span></div></a>
+                        </li>
+
+<!-- Level 2 -->        <li><a class="js--sc-980100" href="98-00-blank.html#js--980200">
+                            <div class="toc-lev"><span class="toc-lev2-num">98.2</span><span class="toc-lev2-text">Common examples for copying</span></div></a>
+                           <br class="top-pad">
+                           <br class="top-pad">
+                           <br class="top-pad">
+                        </li>
+                    </ul>
+               <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <br class="top-pad">
+
+               <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    TOC - 99 Typicals
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <ul class="toc-line">
+<!-- Level 1 -->        <li><a class="js--sc-990000" href="99-00-typicals.html#js--000000">
+                               <div class="toc-lev"><span class="toc-lev1-num">99</span><span class="toc-lev1-text">Typicals</span></div></a>
+                        </li>
+                    </ul>
+
+                    <ul class="toc-list">
+<!-- Level 2 -->        <li><a class="js--sc-990100" href="99-00-typicals.html#js--990100">
+                            <div class="toc-lev"><span class="toc-lev2-num">99.1</span><span class="toc-lev2-text">Empty Section</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-990101" href="99-00-typicals.html#js--990101">
+                            <div class="toc-lev"><span class="toc-lev3-num">99.1.1</span><span class="toc-lev3-text">Empty subsection</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-990101a" href="99-00-typicals.html#js--990101a">
+                            <div class="toc-lev"><span class="toc-lev3-num"></span><span class="toc-lev3-text">Empty inline section</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-990101b" href="99-00-typicals.html#js--990101b">
+                            <div class="toc-lev"><span class="toc-lev3-num"></span><span class="toc-lev3-text">Additional section</span></div></a>
+                        </li>
+
+
+<!-- Level 2 -->        <li><a class="js--sc-990200" href="99-00-typicals.html#js--990200">
+                            <div class="toc-lev"><span class="toc-lev2-num">99.2</span><span class="toc-lev2-text">Typicals &mdash; lists &amp; hanging indents</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-990200a" href="99-00-typicals.html#js--990200a">
+                            <div class="toc-lev"><span class="toc-lev3-num"></span><span class="toc-lev3-text">Numbered lists</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-990200b" href="99-00-typicals.html#js--990200b">
+                            <div class="toc-lev"><span class="toc-lev3-num"></span><span class="toc-lev3-text">Unumbered lists</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-990200c" href="99-00-typicals.html#js--990200c">
+                            <div class="toc-lev"><span class="toc-lev3-num"></span><span class="toc-lev3-text">Hanging indents</span></div></a>
+                        </li>
+
+
+<!-- Level 2 -->        <li><a class="js--sc-990300" href="99-00-typicals.html#js--990300">
+                            <div class="toc-lev"><span class="toc-lev2-num">99.3</span><span class="toc-lev2-text">Typicals&nbsp;&mdash;&nbsp;links</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-990300a" href="99-00-typicals.html#js--990300a">
+                            <div class="toc-lev"><span class="toc-lev3-num"></span><span class="toc-lev3-text">External links</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-990300b" href="99-00-typicals.html#js--990300b">
+                            <div class="toc-lev"><span class="toc-lev3-num"></span><span class="toc-lev3-text">Internal links to a different page</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-990300c" href="99-00-typicals.html#js--990300c">
+                            <div class="toc-lev"><span class="toc-lev3-num"></span><span class="toc-lev3-text">Link to a point on another page</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-990300d" href="99-00-typicals.html#js--990300d">
+                            <div class="toc-lev"><span class="toc-lev3-num"></span><span class="toc-lev3-text">Link to a point on the same page</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-990300e" href="99-00-typicals.html#js--990300e">
+                            <div class="toc-lev"><span class="toc-lev3-num"></span><span class="toc-lev3-text">Tested and untested links</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-990300f" href="99-00-typicals.html#js--990300f">
+                            <div class="toc-lev"><span class="toc-lev3-num"></span><span class="toc-lev3-text">Link summary</span></div></a>
+                        </li>
+
+
+<!-- Level 2 -->        <li><a class="js--sc-990400" href="99-00-typicals.html#js--990400">
+                            <div class="toc-lev"><span class="toc-lev2-num">99.4</span><span class="toc-lev2-text">Typicals&nbsp;&mdash;&nbsp;tables &amp; footnotes</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-990400a" href="99-00-typicals.html#js--990400a">
+                            <div class="toc-lev"><span class="toc-lev3-num"></span><span class="toc-lev3-text">The standard table</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-990400b" href="99-00-typicals.html#js--990400b">
+                            <div class="toc-lev"><span class="toc-lev3-num"></span><span class="toc-lev3-text">Dense tables</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-990400c" href="99-00-typicals.html#js--990400c">
+                            <div class="toc-lev"><span class="toc-lev3-num"></span><span class="toc-lev3-text">Incidental tables</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-990400d" href="99-00-typicals.html#js--990400d">
+                            <div class="toc-lev"><span class="toc-lev3-num"></span><span class="toc-lev3-text">Footnotes</span></div></a>
+                        </li>
+
+
+<!-- Level 2 -->        <li><a class="js--sc-990500" href="99-00-typicals.html#js--990500">
+                            <div class="toc-lev"><span class="toc-lev2-num">99.5</span><span class="toc-lev2-text">Typicals&nbsp;&mdash;&nbsp;basic figures</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-990600" href="99-00-typicals.html#js--990600">
+                            <div class="toc-lev"><span class="toc-lev2-num">99.6</span><span class="toc-lev2-text">Typicals&nbsp;&mdash;&nbsp;figures &amp; Lightbox</span></div></a>
+                        </li>
+
+
+<!-- Level 2 -->        <li><a class="js--sc-990700" href="99-00-typicals.html#js--990700">
+                            <div class="toc-lev"><span class="toc-lev2-num">99.7</span><span class="toc-lev2-text">Typicals&nbsp;&mdash;&nbsp;code fragments</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-990700a" href="99-00-typicals.html#js--990700a">
+                            <div class="toc-lev"><span class="toc-lev3-num"></span><span class="toc-lev3-text">Code in complex containers</span></div></a>
+                        </li>
+<!-- Level 3 -->        <li><a class="js--sc-990700b" href="99-00-typicals.html#js--990700b">
+                            <div class="toc-lev"><span class="toc-lev3-num"></span><span class="toc-lev3-text">Code in simple containers</span></div></a>
+                        </li>
+
+
+<!-- Level 2 -->        <li><a class="js--sc-990800" href="99-00-typicals.html#js--990800">
+                            <div class="toc-lev"><span class="toc-lev2-num">99.8</span><span class="toc-lev2-text">Typicals&nbsp;&mdash;&nbsp;formulae using MathJax</span></div></a>
+                        </li>
+
+
+<!-- Level 2 -->        <li><a class="js--sc-990900" href="99-00-typicals.html#js--990900">
+                            <div class="toc-lev"><span class="toc-lev2-num">99.9</span><span class="toc-lev2-text">Typicals&nbsp;&mdash;&nbsp;text and formats</span></div></a>
+                        </li>
+
+
+<!-- Level 2 -->        <li><a class="js--sc-991000" href="99-00-typicals.html#js--991000">
+                            <div class="toc-lev"><span class="toc-lev2-num">99.10</span><span class="toc-lev2-text">Typicals&nbsp;&mdash;&nbsp;Git VCS styles</span></div></a>
+                        </li>
+                    </ul>
+               <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                </div>                                          <!-- End of TOC column        -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Right column (not used)  -->
+            </div>                                              <!-- End of TOC section       -->
+<!-- ========================================================================== [WP END]      -->
+
+
+        </header>                                               <!-- End of header            -->
+<!-- ========================================================================== [WP END]      -->
+
+
+<!-- ************************************************************************** [WP LEADIN]
+     SECTION START - AUTHOR'S NOTE
+     ***********************************************************************-->
+
+        <section class="section-std" id="js--000100">           <!-- Start of section         -->
+            <div class="rg-row sub-title-row">                  <!-- Start of subtitle row    -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Left column (not used)   -->
+                <div class="rg-col rg-span3-5">                 <!-- Start of subtitle column -->
+                    <div class="sub-title-thinline"></div>      <!-- Thin overline            -->
+                    <div class="sub-title-num-box"><h6>Placeholder</h6></div>
+                </div>                                          <!-- End of subtitle column   -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Right column (not used)  -->
+            </div>                                              <!-- End of Subtitle row      -->
+
+
+            <div class="rg-row">                                <!-- Start of section content -->
+                <div class="rg-col rg-span1-5">                 <!-- Start of left column     -->
+                    <aside class="aside-head">                  <!-- Start of left side bar   -->
+                        <h2>a note by the author</h2>
+                    </aside>                                    <!-- End of left side bar     -->
+                </div>                                          <!-- End of left column       -->
+
+                <div class="rg-col rg-span3-5 section-text">    <!-- Start of section text    -->
+
+                    <p class="hyp">This is the downloadable version of a template for the publication of web based books and documents.</p>
+
+                    <p class="hyp">The template as it stands is an empty framework (it contains a few notes and examples) designed to hold whatever document or publication is directed at it. It&rsquo;s well set out, has a range of nice and consistent styles and navigations that can be used with almost no effort. </p>
+
+                    <p class="hyp">There is a whole website that provides very detailed information about the construction of the website template and how to use it. You can access it at:</p>
+
+                    <p class="hyp" style="text-align: center"><a class="hlink nohyp" href="https://www.practicalseries.com/1001-webdevelopment">https://www.practicalseries.com/1001-webdevelopment</a></p>
+
+                    <p class="hyp">The website also contains a full tutorial for learning how to build a website and covers HTML and CSS in considerable detail as well as providing a primer to JavaScript and jQuery and how to access and use various plugging applications that are useful.</p>
+
+                    <p class="hyp">The site is comprehensive, assumes no previous knowledge and is easy to understand. I apologise in advance for my sense of humour.</p>
+
+                    <p class="hyp">This website template is free to use and is made available under the <a class="xref nohyp js--sc-020501" href="80-00-finally.html#js--800400">MIT&nbsp;License</a>.</p>
+
+                    <p class="hyp">I hope you find it useful.</p>
+
+                    <p class="hyp">Michael Gledhill<br>March 2019</p>
+
+                </div>                                          <!-- End of section text      -->
+
+                <div class="rg-col rg-span1-5">                 <!-- Start of right column    -->
+                <!--     <aside class="aside-left">                  Start of left side bar   -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of right column      -->
+            </div>                                              <!-- End of section content   -->
+        </section>                                              <!-- End of section           -->
+<!-- ========================================================================== [WP END]      -->
+
+
+<!-- ************************************************************************** [WP LAST]
+     SECTION - LAST SECTION BEFORE FOOTER (WITH NAVIGATION)
+     ***********************************************************************-->
+
+        <p> <br class="toc-pad"></p>
+        <p> <br class="toc-pad"></p>
+        <div class="section-std" id="js--999901">               <!-- Start of additional row  -->
+            <div class="rg-row">                                <!-- Start of row content     -->
+                <div class="rg-col rg-span1-5">                 <!-- Start of left column     -->
+                </div>                                          <!-- End of left column       -->
+
+                <div class="rg-col rg-span3-5 aside-nav">       <!-- Start of end image area  -->
+                    <img src="11-resources/01-css/01-css-images/end-mark.svg" alt="End flourish image">
+                </div>                                          <!-- End of section text area -->
+
+                <div class="rg-col rg-span1-5">                 <!-- Start of right column    -->
+                    <aside class="aside-nav">                   <!-- Start of sidebar nav     -->
+                        <a class="xref" href="01-00-intro.html#js--000000">Next</a>
+                    </aside>                                    <!-- End of right side bar    -->
+                </div>                                          <!-- End of right column      -->
+            </div>                                              <!-- End of row content       -->
+        </div>                                                  <!-- End of additional row    -->
+<!-- ========================================================================== [WP END]      -->
+
+
+<!-- ************************************************************************** [WP FOOTER]
+     FOOTER
+     ***********************************************************************-->
+        <footer class="footer">                                 <!-- Start of footer          -->
+            <ul class="footer-nav">                             <!-- Start of footer nav      -->
+                <li><a class="js--sc-000000" href="#"><span class="top-nav-icon" style="color:#5b7daf">t</span>Top</a><span class="footer-spacer">&#x25C7;</span></li>
+                <li><a href="80-00-finally.html#js--800100">Contact MG</a><span class="footer-spacer">&#x25C7;</span></li>
+                <li><a href="80-00-finally.html#js--800200">Acknowledgments</a><span class="footer-spacer">&#x25C7;</span></li>
+                <li><a href="80-00-finally.html#js--800300">Colophon</a><span class="footer-spacer">&#x25C7;</span></li>
+                <li><a href="80-00-finally.html#js--800400">Legal &amp; Privacy</a></li>
+            </ul>                                               <!-- End of footer nav        -->
+        </footer>                                               <!-- End of footer            -->
+<!-- ========================================================================== [WP END]      -->
+
+    </body>
+</html>

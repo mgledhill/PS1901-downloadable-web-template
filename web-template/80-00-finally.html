@@ -1,0 +1,952 @@
+<!DOCTYPE html>                                                                 <!-- HTML 5 file -->
+
+<!-- PRACTICALSERIES (c) 2016
+
+*******************************************************************************
+
+PRACTICALSERIES: Practical Series of Publications by Michael Gledhill
+                 Published in the United Kingdom
+
+                 Email: mg@practicalseries.com
+                 Web:   https://practicalseries.com
+
+******************************************************************************* -->
+
+<html lang="en">                                                                <!-- Declare language                              -->
+    <head>                                                                      <!-- Start of head section                         -->
+        <meta charset="utf-8">                                                  <!-- Use unicode char set (< 1024 char from SOF)   -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Make page follow browser width and reset zoom -->
+        <meta name="description" content="Contact me, Michael Gledhill, Acknowledgements, Colophon and Legal">
+
+<!-- ==========================================================================
+
+
+
+*******************************************************************************
+Title :          WEBSITE TEMPLATE                            80-00-FINALLY.HTML
+*******************************************************************************
+DETAILS
+
+The Practical Series website template.
+
+A website to be a template for the publication of web based (technical) books
+and documents for engineering and software development.
+
+The template as it stands is an empty (mostly) framework designed to hold
+whatever document or publication is directed at it. It’s well set out, has a
+range of nice and consistent styles and navigations that can be used with
+almost no effort. It has plenty of instructions for what to do and when. It’s
+consistent in its appearance and is (relatively) easy to use; there’s even
+some maths and geometry involved in the columns and how they work.
+
+*******************************************************************************
+MODIFICATION HISTORY:
+
+This is a complete summary of all software modifications.
+
+Date          Issue        Author         Reason for Modification
+*******************************************************************************
+28 Mar 2019   D01          M. Gledhill    Based on PS1001-web-template P14
+******************************************************************************* -->
+
+
+<!-- **************************************************************************
+     FAVICON
+     ***********************************************************************-->
+        <!-- favicons all platforms --> <link rel="apple-touch-icon" sizes="180x180" href="11-resources/02-images/01-favicons/apple-touch-icon.png">
+                                        <link rel="icon" type="image/png" href="11-resources/02-images/01-favicons/favicon-32x32.png" sizes="32x32">
+                                        <link rel="icon" type="image/png" href="11-resources/02-images/01-favicons/favicon-16x16.png" sizes="16x16">
+                                        <link rel="manifest" href="11-resources/02-images/01-favicons/manifest.json">
+                                        <link rel="mask-icon" href="11-resources/02-images/01-favicons/safari-pinned-tab.svg">
+                                        <meta name="theme-color" content="#ffffff">
+
+
+<!-- **************************************************************************
+     HEAD SCRIPT AREA
+     ***********************************************************************-->
+        <!-- jQuery Library -->         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Waypoints (sticky nav) --> <script src="21-global/05-js/jquery.waypoints.min.js"></script>
+        <!-- Hyphenator -->             <script src="21-global/05-js/hyphenator.js"></script>
+        <!-- Lightbox -->               <script src="21-global/05-js/lightbox.js"></script>
+        <!-- Prettify (main) -->        <script src="21-global/05-js/run_prettify.js?autoload=true&lang=css"></script>
+        <!-- MathJax -->                <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML" async></script>
+        <!-- PS main script -->         <script src="11-resources/05-js/script.js"></script>
+                                                                <!-- ▼▼▼▼ CHANGE FOLDER ▼▼▼▼  -->
+        <!-- PS local scroll script --> <script src="01-pages/80-00-finally/05-local-js/80-00-scroll.js"></script>
+
+
+<!-- **************************************************************************
+     HEAD CSS LOAD
+     ***********************************************************************-->
+        <!-- Load fonts -->             <link rel="stylesheet" type="text/css" href="21-global/03-fonts/ps-fonts.css">
+        <!-- Ionicons -->               <link rel="stylesheet" type="text/css" href="21-global/01-css/ionicons.min.css">
+        <!-- Normalise -->              <link rel="stylesheet" type="text/css" href="21-global/01-css/normalise.css">
+        <!-- Lightbox styles -->        <link rel="stylesheet" type="text/css" href="21-global/01-css/lightbox.css">
+        <!-- PS grid system -->         <link rel="stylesheet" type="text/css" href="11-resources/01-css/grid.css">
+        <!-- PS main styles -->         <link rel="stylesheet" type="text/css" href="11-resources/01-css/style.css">
+                                                                <!-- ▼▼▼▼ CHANGE FOLDER ▼▼▼▼  -->
+        <!-- Code frag highlights      <link rel="stylesheet" type="text/css" href="01-pages/80-00-finally/01-local-css/80-00-codeline.css">-->
+
+
+<!-- **************************************************************************
+     TITLE
+     ***********************************************************************-->
+        <title>And finally... | PracticalSeries: Website Template</title>
+    </head>
+
+    <body>
+
+
+<!-- ************************************************************************** [WP HEADER]
+     HEADER (COVER & TABLE OF CONTENTS)
+     ***********************************************************************-->
+
+        <header id="js--000000">
+
+<!-- ************************************************************************** [WP TOPNAV]
+     TOP NAVIGATION (ABOVE CONTENTS LIST)
+     ***********************************************************************-->
+
+            <nav>                                               <!-- Start of top nav bar     -->
+                <div class="top-nav">                           <!-- Start of top nav row     -->
+                    <div class="rg-row">                        <!-- Start of nav button row  -->
+                        <!-- Button 01 - Previous Section -->
+                        <a class="nav-wide" href="02-02-example.html#js--020200"><span class="top-nav-icon">l</span><span class="top-nav-text">Prev. section</span></a>
+                        <!-- Button 02 - Previous Chapter -->
+                        <a class="nav-wide" href="02-00-example.html#js--000000"><span class="top-nav-icon">u</span><span class="top-nav-text">Prev. chapter</span></a>
+                        <!-- Button 03 - Home wide (hidden when fixed nav activates) -->
+                        <a class="nav-wide nav-home" href="index.html#js--000000"><span class="top-nav-text">Home</span><span class="top-nav-icon">h</span></a>
+                        <!-- Button 03a - Top narrow (hidden until fixed nav activates) -->
+                        <a class="nav-narrow js--sc-000000" href="#"><span class="top-nav-icon">t</span><span class="top-nav-text">Top</span></a>
+                        <!-- Button 03b - Home narrow (hidden until fixed nav activates) -->
+                        <a class="nav-narrow" href="index.html#js--000000"><span class="top-nav-text">Home</span><span class="top-nav-icon">h</span></a>
+                        <!-- Button 04 - Next Chapter -->
+                        <div class="nav-wide" ></div>
+                        <!-- Button 05 - Next section -->
+                        <div class="nav-wide" ></div>
+                    </div>                                      <!-- End of nav button row    -->
+                </div>                                          <!-- End of top nav row       -->
+            </nav>                                              <!-- End of top nav bar       -->
+<!-- ========================================================================== [WP END]      -->
+
+
+<!-- ************************************************************************** [WP TITLE]
+     TITLE BAR (Section number and text)
+     ***********************************************************************-->
+
+            <div class="rg-row title-row">                      <!-- Start of title row       -->
+                <div class="rg-col rg-span1-5">                 <!-- Start of left column     -->
+                    <aside class="rev-badge">                   <!-- BUILD BADGE              -->
+                        <img src="https://img.shields.io/badge/Development-D01-3F3F30.svg" alt="Build">
+                    </aside>
+                </div>                                          <!-- End of Left column       -->
+                <div class="rg-col rg-span3-5 title-centre">    <!-- Start of title           -->
+                    <div class="title-num-box"><p></p></div>
+                    <div class="title-text-box"><h1><span class="title-small-num"></span><span style="font-size: 150%">And finally &hellip;</span></h1></div>
+                </div>                                          <!-- End of title             -->
+                <div class="rg-col rg-span1-5">                 <!-- Start of right column    -->
+                    <aside class="aside-right-rev">             <!-- Start of right side bar  -->
+                    </aside>                                    <!-- End of right side bar    -->
+                </div>                                          <!-- End of right column      -->
+            </div>                                              <!-- End of title row         -->
+<!-- ========================================================================== [WP END]      -->
+
+
+<!-- ************************************************************************** [WP 000004]
+     TABLE OF CONTENTS
+     ***********************************************************************-->
+
+            <div class="rg-row">                                <!-- Start of TOC section -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Left column (not used for TOC) -->
+                <div class="rg-col rg-span3-5">                 <!-- Start of TOC column (centre column) -->
+
+
+               <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    TOC - 80 And finally
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <ul class="toc-list">
+<!-- Level 2 -->        <li><a class="js--sc-800100" href="80-00-finally.html#js--800100">
+                            <div class="toc-lev"><span class="toc-lev2-num"></span><span class="toc-lev2-text">Contact MG</span></div></a>
+                        </li>
+<!-- Level 2 -->        <li><a class="js--sc-800200" href="80-00-finally.html#js--800200">
+                            <div class="toc-lev"><span class="toc-lev2-num"></span><span class="toc-lev2-text">Acknowledgements</span></div></a>
+                            <br class="top-pad">
+                        </li>
+<!-- Level 2 -->        <li><a class="js--sc-800300" href="80-00-finally.html#js--800300">
+                            <div class="toc-lev"><span class="toc-lev2-num"></span><span class="toc-lev2-text">Colophon</span></div></a>
+                        </li>
+<!-- Level 2 -->        <li><a class="js--sc-800400" href="80-00-finally.html#js--800400">
+                            <div class="toc-lev"><span class="toc-lev2-num"></span><span class="toc-lev2-text">Legal &amp; Privacy</span></div></a>
+                        </li>
+                    </ul>
+              <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                </div>                                          <!-- End of TOC column        -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Right column (not used)  -->
+            </div>                                              <!-- End of TOC section       -->
+<!-- ========================================================================== [WP END]      -->
+
+
+        </header>                                               <!-- End of header            -->
+<!-- ========================================================================== [WP END]      -->
+
+
+
+<!-- ************************************************************************** [WP FIXEDNAV]
+     FIXED NAVIGATION BAR CHANGEOVER POINT
+     ***********************************************************************-->
+        <div id="js--fixed-nav"></div>                          <!-- fixed navigation point   -->
+<!-- ========================================================================== [WP END]      -->
+
+
+<!-- ************************************************************************** [WP LEADIN]
+     CHAPTER - AND FINALLY...
+     ***********************************************************************-->
+
+        <section class="section-std" id="js--980000">           <!-- Start of section         -->
+            <div class="rg-row sub-title-row">                  <!-- Start of subtitle row    -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Left column (not used)   -->
+                <div class="rg-col rg-span3-5">                 <!-- Start of subtitle column -->
+                    <div class="sub-title-thinline"></div>      <!-- Thin overline            -->
+                    <div class="sub-title-num-box"><h6>And finally...</h6></div>
+                </div>                                          <!-- End of subtitle column   -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Right column (not used)  -->
+            </div>                                              <!-- End of Subtitle row      -->
+
+            <div class="rg-row">                                <!-- Start of section content -->
+                <div class="rg-col rg-span1-5">                 <!-- Start of left column     -->
+                <!--     <aside class="aside-left">                  Start of left side bar   -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of left column       -->
+
+                <div class="rg-col rg-span3-5">                 <!-- Start of section text    -->
+
+
+                    <p class="hyp sans">This web site template is part of the Practical Series of Publications. </p>
+
+                    <p class="hyp" style="text-align: center"><a class="hlink nohyp" href="https://www.practicalseries.com/">https://www.practicalseries.com/</a></p>
+
+                    <p class="hyp sans">This section of the web template is intended to provide common information about the website: how to contact people, acknowledgements for the third party applications used within the website and legal and privacy information.</p>
+
+                    <p class="hyp sans">I&rsquo;ve left my contact details in as a starting point; I would suggest you change these to reflect your own website requirements. The acknowledgment section is accurate and up to date; it reflects the third party software that comes with the web template. </p>
+
+                    <p class="hyp sans">The legal section is the typical set of disclaimers that come with websites these days; the licence is the MIT licence under which I&rsquo;ve released this website.</p>
+
+                    <p class="hyp sans">The privacy and cookies section is accurate for the web template as it is issued; there are no cookies or any mechanisms for acquiring personal information within the template. You will need to modify this section if you add things like Google Analytics (see the <a class="hlink nohyp" href="https://www.practicalseries.com/1001-webdevelopment/80-00-finally.html#js--800400">legal and privacy</a> section on my website for details of what I did) or other code that generates cookies.</p>
+
+                </div>                                          <!-- End of section text      -->
+
+                <div class="rg-col rg-span1-5">                 <!-- Start of right column    -->
+                <!--     <aside class="aside-right">                 Start of right side bar  -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of right column      -->
+            </div>                                              <!-- End of section content   -->
+        </section>                                              <!-- End of section           -->
+<!-- ========================================================================== [WP END]      -->
+
+
+<!-- ************************************************************************** [WP SECTION]
+     SECTION - CONTACT MG
+     ***********************************************************************-->
+
+        <section class="section-std" id="js--800100">           <!-- Start of section         -->
+            <div class="rg-row sub-title-row">                  <!-- Start of subtitle row    -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Left column (not used)   -->
+                <div class="rg-col rg-span3-5">                 <!-- Start of subtitle column -->
+                    <div class="sub-title-overline"></div>      <!-- Overline                 -->
+                    <div class="sub-title-text-box"><h2>Contact MG</h2></div>
+                </div>                                          <!-- End of subtitle column   -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Right column (not used)  -->
+            </div>                                              <!-- End of Subtitle row      -->
+
+            <div class="rg-row">                                <!-- Start of section content -->
+                <div class="rg-col rg-span1-5">                 <!-- Start of left column     -->
+                <!--     <aside class="aside-left">                  Start of left side bar   -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of left column       -->
+
+                <div class="rg-col rg-span3-5">                 <!-- Start of section text    -->
+
+                    <p class="hyp">You can reach me by email. I invite questions, corrections, constructive criticism and complaints (polite ones) with the following caveats:</p>
+
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      NUMBERED LIST
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <ol class="list-num">                       <!-- Start of numbered list   -->
+                        <li><p class="hyp">I do have a day job (<span class="first-use">surprising isn&rsquo;t it</span>), I will respond to all polite emails but not necessarily instantly.</p></li>
+
+                        <li><p class="hyp">I can&rsquo;t offer detailed engineering advice about specific problems (<span class="first-use">e.g. why does that valve blow all the fuses when I try to open it</span>), but I will offer pearls of wisdom about less specific software issues.</p></li>
+
+                        <li><p class="hyp">I don&rsquo;t know anything about car engines or kettles so please don&rsquo;t ask.</p></li>
+
+                        <li><p class="hyp">For the more emotionally tainted, my dogs, Hector and Henry, are Salukis and while it may be off topic I have a soft spot for them and I may be willing to discuss them if pushed.</p></li>
+
+                        <li><p class="hyp">If your email comes down to &ldquo;<span class="first-use">I think your website&rsquo;s rubbish, I won&rsquo;t pay for it, but I do want to shout at you for a while about your outrageous shortcomings&rdquo;</span> then please, there is no need to trouble yourself; you&rsquo;ve already said everything by not paying.</p></li>
+                    </ol>                                       <!-- End of numbered list     -->
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                    <p class="hyp">So if you&rsquo;re happy with that, you can reach me here:</p>
+                    <p class="hyp"><a class="hlink" href="mailto:mg@practicalseries.com" style="margin-left: 6rem">mg@practicalseries.com.</a></p>
+
+                    <p class="hyp">I&rsquo;ve included the full details of how I store and manage emails in the <a class="xref nohyp js--sc-800500b" href="#">privacy and personal data section</a> below:</p>
+
+                </div>                                          <!-- End of section text      -->
+
+                <div class="rg-col rg-span1-5">                 <!-- Start of right column    -->
+                <!--     <aside class="aside-right">                 Start of right side bar  -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of right column      -->
+            </div>                                              <!-- End of section content   -->
+        </section>                                              <!-- End of section           -->
+<!-- ========================================================================== [WP END]      -->
+
+
+<!-- ************************************************************************** [WP SECTION]
+     SECTION - ACKNOWLEDGEMENTS
+     ***********************************************************************-->
+
+        <section class="section-std" id="js--800200">           <!-- Start of section         -->
+            <div class="rg-row sub-title-row">                  <!-- Start of subtitle row    -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Left column (not used)   -->
+                <div class="rg-col rg-span3-5">                 <!-- Start of subtitle column -->
+                    <div class="sub-title-overline"></div>      <!-- Overline                 -->
+                    <div class="sub-title-text-box"><h2>Acknowledgements</h2></div>
+                </div>                                          <!-- End of subtitle column   -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Right column (not used)  -->
+            </div>                                              <!-- End of Subtitle row      -->
+
+            <div class="rg-row">                                <!-- Start of section content -->
+                <div class="rg-col rg-span1-5">                 <!-- Start of left column     -->
+                <!--     <aside class="aside-left">                  Start of left side bar   -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of left column       -->
+
+                <div class="rg-col rg-span3-5">                 <!-- Start of section text    -->
+
+                    <p class="hyp">This website template uses the open source fonts: PT Serif, Source Sans Pro, PT Mono, Carrois Gothic SC and Andada Regular SC. These are available from <a class="hlink nohyp" href="https://www.fontsquirrel.com/">font&nbsp;squirrel</a>.</p>
+
+                    <p class="hyp">All of these fonts with the exception of PT Serif are available under the <a class="hlink nohyp" href="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web">sil&nbsp;open&nbsp;font&nbsp;licence</a>. PT Serif is available under the <a class="hlink nohyp" href="https://www.fontsquirrel.com/license/pt-serif">paratype&nbsp;pt&nbsp;sans&nbsp;free&nbsp;font &nbsp;licence</a> (both are reproduce below).</p>
+
+                    <p class="hyp">The website uses various third-party software and files, I hope I&rsquo;ve adequately and correctly made notification of them on the website and in the source code&nbsp;&mdash;&nbsp;I do so again here:</p>
+
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TABLE - STANDARD TABLE WITH BOTTOM BORDERS
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <table class="table-clean" id="js--t80-01">
+<!-- Header row -->     <tr>
+                            <th class="leading"></th>
+                            <th class="table-cent" style="width: 32%">File</th>
+                            <th class="table-cent" style="width: 30%">Author(s)</th>
+                            <th class="table-left" style="width: 38%">Purpose</th>
+                        </tr>
+<!-- Data row -->       <tr>
+                            <td class="leading"><div style="min-height: 4.5em"></div></td>
+                            <td class="table-cent">
+                                <p><a class="hlink nohyp" href="https://necolas.github.io/normalize.css/">normalise.css</a></p>(4.1.1)
+                            </td>
+                            <td class="table-cent">Nicolas Gallagher<br>Jonathan Neal</td>
+                            <td class="table-left">Conditions various html tags so that they are rendered consistently in different browsers </td>
+                        </tr>
+<!-- Data row -->       <tr>
+                            <td class="leading"><div style="min-height: 4.5em"></div></td>
+                            <td class="table-cent">
+                                <p><a class="hlink nohyp" href="https://developers.google.com/speed/libraries/">jquery.min.js</a></p>(3.3.1)
+                            </td>
+                            <td class="table-cent">jQuery foundation<br>(Google hosted library )</td>
+                            <td class="table-left">jQuery library used to run the jQuery scripts </td>
+                        </tr>
+<!-- Data row -->       <tr>
+                            <td class="leading"><div style="min-height: 4.5em"></div></td>
+                            <td class="table-cent">
+                                <p><a class="hlink nohyp" href="http://imakewebthings.com/waypoints/">waypoints.min.js</a></p>(4.0.1)
+                            </td>
+                            <td class="table-cent">Caleb Troughton</td>
+                            <td class="table-left">Used to detect when to switch to fixed navigation bar (has many other uses) </td>
+                        </tr>
+<!-- Data row -->       <tr>
+                            <td class="leading"><div style="min-height: 4.5em"></div></td>
+                            <td class="table-cent">
+                                <p><a class="hlink nohyp" href="https://github.com/mnater/Hyphenator">hyphenator.js</a></p>(5.2.0)
+                            </td>
+                            <td class="table-cent">Mathias Nater</td>
+                            <td class="table-left">Dynamically hyphenates text within a web page </td>
+                        </tr>
+<!-- Data row -->       <tr>
+                            <td class="leading"><div style="min-height: 4.5em"></div></td>
+                            <td class="table-cent">
+                                <p><a class="hlink nohyp" href="https://code.google.com/archive/p/google-code-prettify/">run-prettify.js</a></p>(2013)
+                            </td>
+                            <td class="table-cent">Google</td>
+                            <td class="table-left">Used to display code fragments within a html page </td>
+                        </tr>
+<!-- Data row -->       <tr>
+                            <td class="leading"><div style="min-height: 4.5em"></div></td>
+                            <td class="table-cent">
+                                <p><a class="hlink nohyp" href="http://lokeshdhakar.com/projects/lightbox2/">lightbox.js</a></p>(2.10.0)
+                           </td>
+                            <td class="table-cent">Lokesh Dhakar</td>
+                            <td class="table-left">Used to overlay images on top of the current page </td>
+                        </tr>
+<!-- Data row -->       <tr>
+                            <td class="leading"><div style="min-height: 4.5em"></div></td>
+                            <td class="table-cent">
+                                <p><a class="hlink nohyp" href="https://www.mathjax.org/">mathjax.js</a></p>(2.7.5)
+                            </td>
+                            <td class="table-cent">MathJax</td>
+                            <td class="table-left">Renders AsciiMath, TeX/LaTeX and MathML code as standard mathematical notation</td>
+                        </tr>
+<!-- Caption -->        <tr class="no-border">
+                            <td class="leading"></td>
+                            <td colspan="3" class="table-caption">Third-party software running on the website</td>
+                        </tr>
+                    </table>
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                    <p class="hyp">jQuery, Normalise, Hyphenator, Lightbox and Waypoints are available under the GitHub MIT licence (reproduced below) and MathJax and Prettify are available under the Apache 2.0 licence (also reproduced below):</p>
+
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TABLE - STANDARD TABLE WITH BOTTOM BORDERS
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <table class="table-clean" id="js--t8--021">
+<!-- Header row -->     <tr>
+                            <th class="leading"></th>
+                            <th class="table-cent">GITHUB MIT LICENCE</th>
+                        </tr>
+<!-- Data row -->       <tr>
+                            <td class="leading"><div style="min-height: 4.5em"></div></td>
+                            <td class="table-left">
+                                <p>The MIT License (MIT)</p>
+
+                                <p>Copyright &copy; [Authors as listed in the above table]</p>
+
+                                <p class="hyp">Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+                                <p class="hyp sml-caps-ns">The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+                                The software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and non-infringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.</p>
+                                </td>
+                        </tr>
+<!-- Caption -->        <tr class="no-border">
+                            <td class="leading"></td>
+                            <td class="table-caption">Github Massachusetts Institute of Technology (MIT)Licence</td>
+                        </tr>
+<!-- Spacing row -->    <tr class="no-border">
+                            <td class="leading"><div style="min-height: 4.5em"></div></td>
+                            <td class="table-caption"></td>
+                        </tr>
+                    </table>
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+
+
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TABLE - STANDARD TABLE WITH BOTTOM BORDERS
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                     <table class="table-clean" id="js--t80-02">
+                        <tr>
+<!-- Header row -->     <th class="leading"></th>
+                            <th class="table-cent">APACHE 2.0 LICENCE AND REFERENCE</th>
+                        </tr>
+<!-- Data row -->       <tr>
+                            <td class="leading"><div style="min-height: 4.5em"></div></td>
+                            <td class="table-left">
+                                <p>The Apache License Version 2.0, January 2004</p>
+
+                                <p>Copyright &copy; [Authors as listed in the above table]</p>
+
+                                <p class="hyp">Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at:</p>
+
+                                <p><a class="hlink nohyp" href="http://apache.org/licenses/LICENSE-2.0">http://apache.org/licenses/license-2.0</a></p>
+
+                                <p class="hyp sml-caps-ns">Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "as is" basis, without warranties or conditions of any kind, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
+                                </td>
+                        </tr>
+<!-- Caption -->        <tr class="no-border">
+                            <td class="leading"></td>
+                            <td class="table-caption">Apache Licence</td>
+                        </tr>
+<!-- Spacing row -->    <tr class="no-border">
+                            <td class="leading"><div style="min-height: 4.5em"></div></td>
+                            <td class="table-caption"></td>
+                        </tr>
+
+                    </table>
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TABLE - STANDARD TABLE WITH BOTTOM BORDERS
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                     <table class="table-clean" id="js--t80-04">
+                        <tr>
+<!-- Header row -->     <th class="leading"></th>
+                            <th class="table-cent">sil open font license v1.10</th>
+                        </tr>
+<!-- Data row -->       <tr>
+                            <td class="leading"><div style="min-height: 4.5em"></div></td>
+                            <td class="table-left">
+                                <p>SIL Open Font License v1.10<br>26 February 2007 </p>
+
+                                <p><em>Preamble</em></p>
+
+                                <p class="hyp">The goals of the Open Font License (OFL) are to stimulate worldwide development of collaborative font projects, to support the font creation efforts of academic and linguistic communities, and to provide a free and open framework in which fonts may be shared and improved in partnership with others.</p>
+
+                                <p class="hyp">The OFL allows the licensed fonts to be used, studied, modified and redistributed freely as long as they are not sold by themselves. The fonts, including any derivative works, can be bundled, embedded, redistributed and/or sold with any software provided that any reserved names are not used by derivative works. The fonts and derivatives, however, cannot be released under any other type of license. The requirement for fonts to remain under this license does not apply to any document created using the fonts or their derivatives.</p>
+
+                                <p><em>Definitions</em></p>
+
+                                <p class="hyp ">&ldquo;Font Software&rdquo; refers to the set of files released by the Copyright Holder(s) under this license and clearly marked as such. This may include source files, build scripts and documentation.</p>
+
+                                <p class="hyp ">&ldquo;Reserved Font Name&rdquo; refers to any names specified as such after the copyright statement(s).</p>
+
+                                <p class="hyp ">&ldquo;Original Version&rdquo; refers to the collection of Font Software components as distributed by the Copyright Holder(s).</p>
+
+                                <p class="hyp ">&ldquo;Modified Version&rdquo; refers to any derivative made by adding to, deleting, or substituting&mdash;in part or in whole&mdash;any of the components of the Original Version, by changing formats or by porting the Font Software to a new environment.</p>
+
+                                <p class="hyp ">&ldquo;Author&rdquo; refers to any designer, engineer, programmer, technical writer or other person who contributed to the Font Software.</p>
+
+                                <p><em>Permission &amp; conditions</em></p>
+
+                                <p class="hyp ">Permission is hereby granted, free of charge, to any person obtaining a copy of the Font Software, to use, study, copy, merge, embed, modify, redistribute, and sell modified and unmodified copies of the Font Software, subject to the following conditions:</p>
+                                <ol style="margin-left: 3rem;">
+                                    <li style="padding: 0 0 0.5rem 1rem">Neither the Font Software nor any of its individual components, in Original or Modified Versions, may be sold by itself.</li>
+
+                                    <li style="padding: 0 0 0.5rem 1rem">Original or Modified Versions of the Font Software may be bundled, redistributed and/or sold with any software, provided that each copy contains the above copyright notice and this license. These can be included either as stand-alone text files, human-readable headers or in the appropriate machine-readable metadata fields within text or binary files as long as those fields can be easily viewed by the user.</li>
+
+                                    <li style="padding: 0 0 0.5rem 1rem">No Modified Version of the Font Software may use the Reserved Font Name(s) unless explicit written permission is granted by the corresponding Copyright Holder. This restriction only applies to the primary font name as presented to the users.</li>
+
+                                    <li style="padding: 0 0 0.5rem 1rem">The name(s) of the Copyright Holder(s) or the Author(s) of the Font Software shall not be used to promote, endorse or advertise any Modified Version, except to acknowledge the contribution(s) of the Copyright Holder(s) and the Author(s) or with their explicit written permission.</li>
+
+                                    <li style="padding: 0 0 0.5rem 1rem">The Font Software, modified or unmodified, in part or in whole, must be distributed entirely under this license, and must not be distributed under any other license. The requirement for fonts to remain under this license does not apply to any document created using the Font Software.</li>
+                                </ol>
+
+                                <p><em>Termination</em></p>
+
+                                <p class="hyp ">This license becomes null and void if any of the above conditions are not met.</p>
+                                <p><em>DISCLAIMER</em></p>
+
+                                <p class="hyp sml-caps-ns">The font software is provided &ldquo;as is&rdquo;, without warranty of any kind, express or implied, including but not limited to any warranties of merchantability, fitness for a particular purpose and non-infringement of copyright, patent, trademark, or other right. In no event shall the copyright holder be liable for any claim, damages or other liability, including any general, special, indirect, incidental, or consequential damages, whether in an action of contract, tort or otherwise, arising from, out of the use or inability to use the font software or from other dealings in the font software.</p>
+                                </td>
+                        </tr>
+<!-- Caption -->        <tr class="no-border">
+                            <td class="leading"></td>
+                            <td class="table-caption">SIL Open Font Licence</td>
+                        </tr>
+<!-- Spacing row -->    <tr class="no-border">
+                            <td class="leading"><div style="min-height: 4.5em"></div></td>
+                            <td class="table-caption"></td>
+                        </tr>
+                    </table>
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+
+
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TABLE - STANDARD TABLE WITH BOTTOM BORDERS
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                     <table class="table-clean" id="js--t80-05">
+<!-- Header row -->     <tr>
+                            <th class="leading"></th>
+                            <th class="table-cent">paratype pt sans free font license v1.00</th>
+                        </tr>
+<!-- Data row -->       <tr>
+                            <td class="leading"><div style="min-height: 4.5em"></div></td>
+                            <td class="table-left">
+                                <p>Paratype PT Sans Free Font License v1.00</p>
+
+
+                                <p><em>Permission &amp; conditions</em></p>
+
+                                <p class="hyp ">Permission is hereby granted, free of charge, to any person obtaining a copy of the font software, to use, study, copy, merge, embed, modify, redistribute, and sell modified and unmodified copies of the font software, subject to the following conditions:</p>
+
+                                <ol style="margin-left: 3rem;">
+                                    <li style="padding: 0 0 0.5rem 1rem">Neither the font software nor any of its individual components, in original or modified versions, may be sold by itself.</li>
+
+                                    <li style="padding: 0 0 0.5rem 1rem">Original or modified versions of the font software may be bundled, redistributed and/or sold with any software, provided that each copy contains the above copyright notice and this license. These can be included either as stand-alone text files, human-readable headers or in the appropriate machine-readable metadata fields within text or binary files as long as those fields can be easily viewed by the user.</li>
+
+                                    <li style="padding: 0 0 0.5rem 1rem">No modified version of the font software may use the Reserved Name(s) or combinations of Reserved Names with other words unless explicit written permission is granted by the ParaType. This restriction only applies to the primary font name as presented to the users.</li>
+
+                                    <li style="padding: 0 0 0.5rem 1rem">The name of ParaType or the author(s) of the font software shall not be used to promote, endorse or advertise any modified version, except to acknowledge the contribution(s) of ParaType and the author(s) or with explicit written permission of ParaType.</li>
+
+                                    <li style="padding: 0 0 0.5rem 1rem">The font software, modified or unmodified, in part or in whole, must be distributed entirely under this license, and must not be distributed under any other license. The requirement for fonts to remain under this license does not apply to any document created using the Font Software.</li>
+                                </ol>
+
+                                <p><em>Termination &amp; territory</em></p>
+
+                                <p class="hyp ">This license has no limits on time and territory, but it becomes null and void if any of the above conditions are not met.</p>
+                                <p><em>DISCLAIMER</em></p>
+
+                                <p class="hyp sml-caps-ns">The font software is provided &ldquo;as is&rdquo; without warranty of any kind, express or implied, including but not limited to any warranties of merchantability, fitness for a particular purpose and non-infringement of copyright, patent, trademark, or other right. In no event shall Paratype be liable for any claim, damages or other liability, including any general, special, indirect, incidental, or consequential damages, whether in an action of contract, tort or otherwise, arising from, out of the use or inability to use the font software or from other dealings in the font software.</p>
+                                </td>
+                        </tr>
+<!-- Caption -->        <tr class="no-border">
+                            <td class="leading"></td>
+                            <td class="table-caption">Paratype PT Sans Free Font License</td>
+                        </tr>
+                    </table>
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                </div>                                          <!-- End of section text      -->
+
+                <div class="rg-col rg-span1-5">                 <!-- Start of right column    -->
+                <!--     <aside class="aside-right">                 Start of right side bar  -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of right column      -->
+            </div>                                              <!-- End of section content   -->
+        </section>                                              <!-- End of section           -->
+<!-- ========================================================================== [WP END]      -->
+
+
+
+<!-- ************************************************************************** [WP SECTION]
+     SECTION - COLOPHON
+     ***********************************************************************-->
+
+        <section class="section-std" id="js--800300">           <!-- Start of section         -->
+            <div class="rg-row sub-title-row">                  <!-- Start of subtitle row    -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Left column (not used)   -->
+                <div class="rg-col rg-span3-5">                 <!-- Start of subtitle column -->
+                    <div class="sub-title-overline"></div>      <!-- Overline                 -->
+                    <div class="sub-title-text-box"><h2>Colophon</h2></div>
+                </div>                                          <!-- End of subtitle column   -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Right column (not used)  -->
+            </div>                                              <!-- End of Subtitle row      -->
+
+            <div class="rg-row">                                <!-- Start of section content -->
+                <div class="rg-col rg-span1-5">                 <!-- Start of left column     -->
+                <!--     <aside class="aside-left">                  Start of left side bar   -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of left column       -->
+
+                <div class="rg-col rg-span3-5">                 <!-- Start of section text    -->
+
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TABLE - STANDARD TABLE WITH BOTTOM BORDERS
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <table class="table-clean" id="js--t80-06">
+<!-- Header row -->     <tr class="no-border">                                  <!-- TABLE - Start of header -->
+                            <th class="leading"></th>
+                            <th class="table-cent" style="width: 33.3%"></th>   <!-- set column 01 width here -->
+                            <th class="table-cent" style="width: 33.3%"></th>   <!-- set column 02 width here -->
+                            <th class="table-left" style="width: 33.3%"></th>   <!-- set column 03 width here -->
+                        </tr>
+<!-- Data row -->       <tr class="no-border">                                  <!-- TABLE - Start of row 01 -->
+                            <td class="leading"><div style="min-height: 4.5em"></div></td>
+                            <td class="table-cent">
+                                <figure class="fig-row">
+                                    <div class="fig-col fig1-1" id="js--f80-01">
+                                        <img style="margin-top: -2rem" src="01-pages/80-00-finally/02-images/fig-80-01.png" alt="Henry outline">
+                                    </div>
+                                </figure>
+                            </td>
+                            <td colspan="2" class="table-left">
+                                <p class="hyp">This website template is part of the:<br> <em>Practical Series of Publications</em>.</p>
+                                <p class="hyp">It was designed and published in the United Kingdom by Michael&nbsp;Gledhill.</p>
+
+                                <p class="hyp">It was first published in October 2016.</p>
+
+                            </td>
+                        </tr>
+<!-- Data row -->       <tr class="no-border">
+                            <td class="leading"><div style="min-height: 4.5em"></div></td>
+                            <td colspan="2" class="table-left">
+                                <p class="hyp">This website template uses open source fonts.</p>
+
+                                <p class="hyp">The main body text is PT Serif typeface (serif),<br>headings and  tables &amp;c. are Source Sans Pro (sans serif), and code fragments in PT Mono (monospaced). Andada SC and Carrois Gothic SC are used for small caps</p>
+
+                                 <p class="hyp">The fonts are available here: <a class="hlink nohyp" href="https://www.fontsquirrel.com/">here</a>.</p>
+
+                            </td>
+                            <td class="table-right">
+                                <figure class="fig-row">
+                                    <div class="fig-col fig1-1" id="js--f80-04">
+                                        <img src="01-pages/80-00-finally/02-images/fig-80-02.png" alt="Hector outline">
+                                    </div>
+                                </figure>
+
+                            </td>
+                        </tr>
+                    </table>
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                </div>                                          <!-- End of section text      -->
+
+                <div class="rg-col rg-span1-5">                 <!-- Start of right column    -->
+                <!--     <aside class="aside-right">                 Start of right side bar  -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of right column      -->
+            </div>                                              <!-- End of section content   -->
+        </section>                                              <!-- End of section           -->
+<!-- ========================================================================== [WP END]      -->
+
+
+
+<!-- ************************************************************************** [WP SECTION]
+     SECTION - LEGAL
+     ***********************************************************************-->
+
+        <section class="section-std" id="js--800400">           <!-- Start of section         -->
+            <div class="rg-row sub-title-row">                  <!-- Start of subtitle row    -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Left column (not used)   -->
+                <div class="rg-col rg-span3-5">                 <!-- Start of subtitle column -->
+                    <div class="sub-title-overline"></div>      <!-- Overline                 -->
+                    <div class="sub-title-text-box"><h2>Legal</h2></div>
+                </div>                                          <!-- End of subtitle column   -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Right column (not used)  -->
+            </div>                                              <!-- End of Subtitle row      -->
+
+            <div class="rg-row">                                <!-- Start of section content -->
+                <div class="rg-col rg-span1-5">                 <!-- Start of left column     -->
+                <!--     <aside class="aside-left">                  Start of left side bar   -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of left column       -->
+
+                <div class="rg-col rg-span3-5">                 <!-- Start of section text    -->
+
+                    <p class="hyp">&copy;&nbsp;2016 Michael Gledhill. All rights reserved.</p>
+
+                    <p class="hyp">The website template: its contents, format, structure, documentation and source code, I make available to all who wish to use it. It is available under the MIT Licence (below):</p>
+
+
+                </div>                                          <!-- End of section text      -->
+
+                <div class="rg-col rg-span1-5">                 <!-- Start of right column    -->
+                <!--     <aside class="aside-right">                 Start of right side bar  -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of right column      -->
+            </div>                                              <!-- End of section content   -->
+        </section>                                              <!-- End of section           -->
+<!-- ========================================================================== [WP END]      -->
+
+
+
+
+
+<!-- ************************************************************************** [WP INLINE]
+     SECTION INLINE
+     ***********************************************************************-->
+
+        <section class="section-std" id="js--800400a">          <!-- Start of section         -->
+            <div class="rg-row sub-title-row">                  <!-- Start of subtitle row    -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Left column (not used)   -->
+                <div class="rg-col rg-span3-5">                 <!-- Start of subtitle column -->
+                    <!-- <div class="sub-title-num-box"><h4></h4></div> -->
+                    <div class="sub-title-text-box"><h4>MIT License</h4></div>
+                </div>                                          <!-- End of subtitle column   -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Right column (not used)  -->
+            </div>                                              <!-- End of Subtitle row      -->
+
+            <div class="rg-row">                                <!-- Start of section content -->
+                <div class="rg-col rg-span1-5">                 <!-- Start of left column     -->
+                <!--     <aside class="aside-left">                  Start of left side bar   -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of left column       -->
+
+                <div class="rg-col rg-span3-5">                 <!-- Start of section text    -->
+
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TABLE - STANDARD TABLE WITH BOTTOM BORDERS
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <table class="table-clean" id="js--t80-07">
+<!-- Data row -->       <tr style=" border-top: 1px solid #cccccc">
+                            <td class="leading"><div style="min-height: 4.5em;"></div></td>
+                            <td class="table-left">
+                                <p>The MIT License (MIT)</p>
+
+                                <p>Copyright &copy; 2016 Michael Gledhill</p>
+
+                                <p class="hyp">Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+                                <p class="hyp sml-caps-ns">The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+                                The software is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and non-infringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the software.</p>
+                                </td>
+                        </tr>
+<!-- Spacing row -->    <tr class="no-border">
+                            <td class="leading"><div style="min-height: 4.5em"></div></td>
+                            <td class="table-caption"></td>
+                        </tr>
+                    </table>
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                </div>                                          <!-- End of section text      -->
+
+                <div class="rg-col rg-span1-5">                 <!-- Start of right column    -->
+                <!--     <aside class="aside-right">                 Start of right side bar  -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of right column      -->
+            </div>                                              <!-- End of section content   -->
+        </section>                                              <!-- End of section           -->
+<!-- ========================================================================== [WP END]      -->
+
+
+
+
+<!-- ************************************************************************** [WP SECTION]
+     SECTION - PRIVACY
+     ***********************************************************************-->
+
+        <section class="section-std" id="js--800500">           <!-- Start of section         -->
+            <div class="rg-row sub-title-row">                  <!-- Start of subtitle row    -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Left column (not used)   -->
+                <div class="rg-col rg-span3-5">                 <!-- Start of subtitle column -->
+                    <div class="sub-title-thinline"></div>
+                    <div class="sub-title-text-box"><h2>Privacy &amp; cookies</h2></div>
+                </div>                                          <!-- End of subtitle column   -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Right column (not used)  -->
+            </div>                                              <!-- End of Subtitle row      -->
+
+            <div class="rg-row">                                <!-- Start of section content -->
+                <div class="rg-col rg-span1-5">                 <!-- Start of left column     -->
+                <!--     <aside class="aside-left">                  Start of left side bar   -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of left column       -->
+
+                <div class="rg-col rg-span3-5">                 <!-- Start of section text    -->
+
+                    <p class="hyp">This is a big thing now in Europe and in England: <a class="hlink nohyp" href="https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/">gdpr</a> <span class="first-use">(General Data Protection Regulation)</span>; it means I have to be very careful with any data I collect about people. I also have to explain why I want the data and what I&rsquo;m going to do with it. So here goes:</p>
+
+                </div>                                          <!-- End of section text      -->
+
+                <div class="rg-col rg-span1-5">                 <!-- Start of right column    -->
+                <!--     <aside class="aside-right">                 Start of right side bar  -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of right column      -->
+            </div>                                              <!-- End of section content   -->
+        </section>                                              <!-- End of section           -->
+<!-- ========================================================================== [WP END]      -->
+
+
+<!-- ************************************************************************** [WP INLINE]
+     SECTION INLINE
+     ***********************************************************************-->
+
+        <section class="section-std" id="js--800500a">          <!-- Start of section         -->
+            <div class="rg-row sub-title-row">                  <!-- Start of subtitle row    -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Left column (not used)   -->
+                <div class="rg-col rg-span3-5">                 <!-- Start of subtitle column -->
+                    <!-- <div class="sub-title-num-box"><h4></h4></div> -->
+                    <div class="sub-title-text-box"><h4>Cookies</h4></div>
+                </div>                                          <!-- End of subtitle column   -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Right column (not used)  -->
+            </div>                                              <!-- End of Subtitle row      -->
+
+            <div class="rg-row">                                <!-- Start of section content -->
+                <div class="rg-col rg-span1-5">                 <!-- Start of left column     -->
+                <!--     <aside class="aside-left">                  Start of left side bar   -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of left column       -->
+
+                <div class="rg-col rg-span3-5">                 <!-- Start of section text    -->
+
+                    <p class="hyp">This website template does not use nor does it install any cookies whatsoever.</p>
+
+
+                    <p class="hyp"><em>In summary, you can browse this site with complete anonymity.</em></p>
+
+                </div>                                          <!-- End of section text      -->
+
+                <div class="rg-col rg-span1-5">                 <!-- Start of right column    -->
+                <!--     <aside class="aside-right">                 Start of right side bar  -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of right column      -->
+            </div>                                              <!-- End of section content   -->
+        </section>                                              <!-- End of section           -->
+<!-- ========================================================================== [WP END]      -->
+
+<!-- ************************************************************************** [WP INLINE]
+     SECTION INLINE
+     ***********************************************************************-->
+
+        <section class="section-std" id="js--800500b">          <!-- Start of section         -->
+            <div class="rg-row sub-title-row">                  <!-- Start of subtitle row    -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Left column (not used)   -->
+                <div class="rg-col rg-span3-5">                 <!-- Start of subtitle column -->
+                    <!-- <div class="sub-title-num-box"><h4></h4></div> -->
+                    <div class="sub-title-text-box"><h4>Privacy and personal data</h4></div>
+                </div>                                          <!-- End of subtitle column   -->
+                <div class="rg-col rg-span1-5"></div>           <!-- Right column (not used)  -->
+            </div>                                              <!-- End of Subtitle row      -->
+
+            <div class="rg-row">                                <!-- Start of section content -->
+                <div class="rg-col rg-span1-5">                 <!-- Start of left column     -->
+                <!--     <aside class="aside-left">                  Start of left side bar   -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of left column       -->
+
+                <div class="rg-col rg-span3-5">                 <!-- Start of section text    -->
+
+                    <p class="hyp">In its downloadable form, this website template does not collect or ask for any personal data. There is no <span class="menu">contact-me</span> form requesting names, addresses, email details or phone numbers &amp;c. Neither are there any user logons or other such forms of identification.</p>
+
+
+                </div>                                          <!-- End of section text      -->
+
+                <div class="rg-col rg-span1-5">                 <!-- Start of right column    -->
+                <!--     <aside class="aside-right">                 Start of right side bar  -->
+                <!--         <p></p>                                 Side bar content         -->
+                <!--     </aside>                                    End of left side bar     -->
+                </div>                                          <!-- End of right column      -->
+            </div>                                              <!-- End of section content   -->
+        </section>                                              <!-- End of section           -->
+<!-- ========================================================================== [WP END]      -->
+
+
+<!-- ************************************************************************** [WP LAST]
+     SECTION - LAST SECTION BEFORE FOOTER (WITH NAVIGATION)
+     ***********************************************************************-->
+
+        <p> <br class="toc-pad"></p>
+        <p> <br class="toc-pad"></p>
+        <div class="section-std" id="js--999901">               <!-- Start of additional row  -->
+            <div class="rg-row">                                <!-- Start of row content     -->
+                <div class="rg-col rg-span1-5">                 <!-- Start of left column     -->
+                    <aside class="aside-nav">                   <!-- Start of sidebar nav     -->
+                        <a class="xref" href="02-02-example.html#js--020200">Prev</a>
+                    </aside>                                    <!-- End of left side bar     -->
+                </div>                                          <!-- End of left column       -->
+
+                <div class="rg-col rg-span3-5 aside-nav">       <!-- Start of end image area  -->
+                    <img src="11-resources/01-css/01-css-images/end-mark.svg" alt="End flourish image">
+                </div>                                          <!-- End of section text area -->
+
+                <div class="rg-col rg-span1-5">                 <!-- Start of right column    -->
+                    <aside class="aside-nav">                   <!-- Start of sidebar nav     -->
+                    </aside>                                    <!-- End of right side bar    -->
+                </div>                                          <!-- End of right column      -->
+            </div>                                              <!-- End of row content       -->
+        </div>                                                  <!-- End of additional row    -->
+<!-- ========================================================================== [WP END]      -->
+
+
+
+<!-- ************************************************************************** [WP FOOTER]
+     FOOTER
+     ***********************************************************************-->
+        <footer class="footer">                                 <!-- Start of footer          -->
+            <ul class="footer-nav">                             <!-- Start of footer nav      -->
+                <li><a class="js--sc-000000" href="#"><span class="top-nav-icon" style="color:#5b7daf">t</span>Top</a><span class="footer-spacer">&#x25C7;</span></li>
+                <li><a  class="js--sc-800100" href="80-00-finally.html#js--800100">Contact MG</a><span class="footer-spacer">&#x25C7;</span></li>
+                <li><a  class="js--sc-800200" href="80-00-finally.html#js--800200">Acknowledgments</a><span class="footer-spacer">&#x25C7;</span></li>
+                <li><a  class="js--sc-800300" href="80-00-finally.html#js--800300">Colophon</a><span class="footer-spacer">&#x25C7;</span></li>
+                <li><a  class="js--sc-800400" href="80-00-finally.html#js--800400">Legal &amp; Privacy</a></li>
+            </ul>                                               <!-- End of footer nav        -->
+        </footer>                                               <!-- End of footer            -->
+<!-- ========================================================================== [WP END]      -->
+
+    </body>
+</html>
