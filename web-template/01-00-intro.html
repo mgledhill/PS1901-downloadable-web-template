@@ -46,7 +46,11 @@ This is a complete summary of all software modifications.
 
 Date          Issue        Author         Reason for Modification
 *******************************************************************************
-28 Mar 2019   D01          M. Gledhill    Based on PS1001-web-template P14
+09 May 2019   R01          M. Gledhill    First formal release
+
+23 Apr 2019   D02          M. Gledhill    Typographical corrections
+
+07 May 2019   D01          M. Gledhill    Based on PS1001-web-template R01
 ******************************************************************************* -->
 
 
@@ -136,17 +140,16 @@ Date          Issue        Author         Reason for Modification
 
             <div class="rg-row title-row">                      <!-- Start of title row       -->
                 <div class="rg-col rg-span1-5">                 <!-- Start of left column     -->
-                    <aside class="rev-badge">                   <!-- BUILD BADGE              -->
-                        <img src="https://img.shields.io/badge/Development-D01-3F3F30.svg" alt="Build">
-                    </aside>
+                <!--     <aside class="aside-left">                  Start of left side bar   -->
+                <!--     </aside>                                    End of left side bar     -->
                 </div>                                          <!-- End of Left column       -->
                 <div class="rg-col rg-span3-5 title-centre">    <!-- Start of title           -->
                     <div class="title-num-box"><p>1</p></div>
                     <div class="title-text-box"><h1><span class="title-small-num">1</span>Introduction</h1></div>
                 </div>                                          <!-- End of title             -->
                 <div class="rg-col rg-span1-5">                 <!-- Start of right column    -->
-                    <aside class="aside-right-rev">             <!-- Start of right side bar  -->
-                    </aside>                                    <!-- End of right side bar    -->
+                <!--     <aside class="aside-right">                 Start of right side bar  -->
+                <!--     </aside>                                    End of left side bar     -->
                 </div>                                          <!-- End of right column      -->
             </div>                                              <!-- End of title row         -->
 <!-- ========================================================================== [WP END]      -->
@@ -241,7 +244,7 @@ Date          Issue        Author         Reason for Modification
 
                     <p class="hyp">It is equipped with eight web pages installed by default in a user friendly directory structure. These files are accompanied by the various and supporting CSS, JavaScript and jQuery files. </p>
 
-                    <p class="hyp">To summarise it contains the following:</p>
+                    <p class="hyp">To summarise it contains the following web pages:</p>
 
 <!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
       TABLE - DENSE TABLE
@@ -285,19 +288,19 @@ Date          Issue        Author         Reason for Modification
                         </tr>
 <!-- Data row -->       <tr>
                             <td class="leading"><div style="min-height: 3em"></div></td>
-                            <td class="table-left">80-00-fianally.html</td>
+                            <td class="table-left">80-00-finally.html</td>
                             <td class="table-left">Contacts, legal &amp;c.</td>
                             <td class="table-left">The finals section: contacts, acknowledgements, colophon, legal, licence and privacy &amp;c. </td>
                         </tr>
 <!-- Data row -->       <tr>
                             <td class="leading"><div style="min-height: 3em"></div></td>
-                            <td class="table-left">90-00-blank.html</td>
+                            <td class="table-left">98-00-blank.html</td>
                             <td class="table-left">An empty section</td>
                             <td class="table-left">An empty section that can be copied and reused as required</td>
                         </tr>
 <!-- Data row -->       <tr>
                             <td class="leading"><div style="min-height: 3em"></div></td>
-                            <td class="table-left">98-00-typicals.html</td>
+                            <td class="table-left">99-00-typicals.html</td>
                             <td class="table-left">Typical examples</td>
                             <td class="table-left">Typical examples of the different components that can be used within the website: figures, lightbox, tables, formula, code &amp;c.</td>
                         </tr>
@@ -308,123 +311,415 @@ Date          Issue        Author         Reason for Modification
                     </table>
 <!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-                    <p class="hyp">The other main files included with the web template are:</p>
+                    <p class="hyp">The other files included with the web template are all the other files we have either used or developed in the course of this discussion:</p>
 
 <!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
       TABLE - DENSE TABLE
       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
                     <table class="table-dense" id="js--t01-02">
 <!-- Header row -->     <tr>
-                            <th class="leading"></th>
-                            <th class="table-left" style="width: 21.6%">File</th>
-                            <th class="table-left" style="width: 20.3%">Location</th>
-                            <th class="table-left" style="width: 58.1%">Description</th>
+                            <th class="leading" style="border-bottom: 1px solid #ccc"></th>
+                            <th class="table-left" style="width: 22%">File</th>
+                            <th class="table-left" style="width: 38%">Location</th>
+                            <th colspan="2" class="table-left" style="width: 40%">Description</th>
                         </tr>
-<!-- Data row -->       <tr style="background-color: #dbe5f1">
-                            <td class="leading"><div style="min-height: 3em"></div></td>
+<!-- Data row -->       <tr class="no-border" style="background-color: #DBE5F1">
+                            <td class="leading" style="border-bottom: 1px solid #DBE5F1"><div style="min-height: 3em"></div></td>
                             <td class="table-left">style.css</td>
                             <td class="table-left">11-resources/01-css</td>
-                            <td class="table-left">The main style CSS file</td>
+                            <td colspan="2" class="table-left">The main style CSS file</td>
                         </tr>
-<!-- Data row -->       <tr style="background-color: #dbe5f1">
-                            <td class="leading"><div style="min-height: 3em"></div></td>
+<!-- Data row -->       <tr style="background-color: #DBE5F1">
+                            <td class="leading" style="border-bottom: 1px solid #ccc"><div style="min-height: 3em"></div></td>
                             <td class="table-left">grid.css</td>
                             <td class="table-left">11-resources/01-css</td>
-                            <td class="table-left">The responsive grid CSS file</td>
+                            <td colspan="2" class="table-left">The responsive grid CSS file</td>
                         </tr>
-<!-- Data row -->       <tr style="background-color: #dbe5f1">
-                            <td class="leading"><div style="min-height: 3em"></div></td>
-                            <td class="table-left">ps-fonts.css</td>
-                            <td class="table-left">21-global/03-font</td>
-                            <td class="table-left">Practical Series font loading file</td>
-                        </tr>
-<!-- Data row -->       <tr style="background-color: #fde9d9">
-                            <td class="leading"><div style="min-height: 3em"></div></td>
+<!-- Data row -->       <tr style="background-color: #FDE9D9">
+                            <td class="leading" style="border-bottom: 1px solid #ccc"><div style="min-height: 3em"></div></td>
                             <td class="table-left">script.js</td>
                             <td class="table-left">11-resources/05-js</td>
-                            <td class="table-left">The sticky navigation jQuery file</td>
+                            <td colspan="2" class="table-left">The sticky navigation jQuery file</td>
+                        </tr>
+<!-- Data row -->       <tr class="no-border" style="background-color: #F2DBDB">
+                            <td class="leading" style="border-bottom: 1px solid #F2DBDB"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">end-mark.svg/png</td>
+                            <td class="table-left">11-resources/01-css/01-css-images</td>
+                            <td class="table-left">The Yorkshire Rose flourish</td>
+                            <td class="table-left"><img src="01-pages/01-00-intro/02-images/fig-00-00a.png" style="height: 1rem" alt="Upload button"></td>
+                        </tr>
+<!-- Data row -->       <tr style="background-color: #F2DBDB">
+                            <td class="leading" style="border-bottom: 1px solid #ccc"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">flourish.svg/png</td>
+                            <td class="table-left">11-resources/01-css/01-css-images</td>
+                            <td class="table-left">Dividing flourish</td>
+                            <td class="table-left"><img src="01-pages/01-00-intro/02-images/fig-00-00b.png" style="max-width: 2rem" alt="Upload button"></td>
                         </tr>
 <!-- Caption -->        <tr class="no-border">
                             <td class="leading"></td>
-                            <td colspan="3" class="table-caption">Table 1.2 &emsp; Common Practical Series files</td>
+                            <td colspan="4" class="table-caption">Table 1.2 &emsp; Common Practical Series files</td>
                         </tr>
                     </table>
 <!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-                    <p class="hyp">The template uses various open source fonts (all contained within the download) to display the text on the web pages.</p>
-
-                    <p class="hyp">The download also contains various third party software files that perform specific functions: lightbox gallery for images, displaying code fragments and equations, hyphenating text &amp;c. broadly these are:</p>
+                    <p class="hyp">Common third party files:</p>
 
 <!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
       TABLE - DENSE TABLE
       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
                     <table class="table-dense" id="js--t01-03">
 <!-- Header row -->     <tr>
-                            <th class="leading"></th>
-                            <th class="table-left" style="width: 21.6%">File</th>
-                            <th class="table-left" style="width: 20.3%">Location</th>
-                            <th class="table-left" style="width: 58.1%">Description</th>
+                            <th class="leading" style="border-bottom: 1px solid #ccc"></th>
+                            <th class="table-left" style="width: 22%">File</th>
+                            <th class="table-left" style="width: 38%">Location</th>
+                            <th class="table-left" style="width: 40%">Description</th>
                         </tr>
-<!-- Data row -->       <tr style="background-color: #dbe5f1">
-                            <td class="leading"><div style="min-height: 3em"></div></td>
+<!-- Data row -->       <tr class="no-border" style="background-color: #DBE5F1">
+                            <td class="leading" style="border-bottom: 1px solid #DBE5F1"><div style="min-height: 3em"></div></td>
                             <td class="table-left">normalise.css</td>
                             <td class="table-left">21-global/01-css</td>
                             <td class="table-left">The Normalise CSS file (standardises the appearance across browsers)</td>
                         </tr>
-<!-- Data row -->       <tr style="background-color: #fde9d9">
-                            <td class="leading"><div style="min-height: 3em"></div></td>
-                            <td class="table-left">jquery.waypoints.min.js</td>
-                            <td class="table-left">21-resources/05-js</td>
-                            <td class="table-left">Waypoint software (used for sticky navigation)</td>
-                        </tr>
-<!-- Data row -->       <tr style="background-color: #fde9d9">
-                            <td class="leading"><div style="min-height: 3em"></div></td>
-                            <td class="table-left">hypenator.js</td>
-                            <td class="table-left">21-resources/05-js</td>
-                            <td class="table-left">Hyphenation tool</td>
-                        </tr>
-<!-- Data row -->       <tr style="background-color: #fde9d9">
-                            <td class="leading"><div style="min-height: 3em"></div></td>
-                            <td class="table-left">lightbox.js</td>
-                            <td class="table-left">21-resources/05-js</td>
-                            <td class="table-left">Lightbox application</td>
-                        </tr>
-<!-- Data row -->       <tr style="background-color: #dbe5f1">
-                            <td class="leading"><div style="min-height: 3em"></div></td>
+<!-- Data row -->       <tr style="background-color: #DBE5F1">
+                            <td class="leading" style="border-bottom: 1px solid #ccc"><div style="min-height: 3em"></div></td>
                             <td class="table-left">lightbox.css</td>
                             <td class="table-left">21-global/01-css</td>
                             <td class="table-left">The Lightbox styling CSS file</td>
                         </tr>
-<!-- Data row -->       <tr style="background-color: #fde9d9">
-                            <td class="leading"><div style="min-height: 3em"></div></td>
+<!-- Data row -->       <tr class="no-border" style="background-color: #FDE9D9">
+                            <td class="leading" style="border-bottom: 1px solid #FDE9D9"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">jquery.waypoints.min.js</td>
+                            <td class="table-left">21-resources/05-js</td>
+                            <td class="table-left">Waypoint software (used for sticky navigation)</td>
+                        </tr>
+<!-- Data row -->       <tr class="no-border" style="background-color: #FDE9D9">
+                            <td class="leading" style="border-bottom: 1px solid #FDE9D9"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">hypenator.js</td>
+                            <td class="table-left">21-resources/05-js</td>
+                            <td class="table-left">Hyphenation tool</td>
+                        </tr>
+<!-- Data row -->       <tr class="no-border" style="background-color: #FDE9D9">
+                            <td class="leading" style="border-bottom: 1px solid #FDE9D9"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">lightbox.js</td>
+                            <td class="table-left">21-resources/05-js</td>
+                            <td class="table-left">Lightbox application</td>
+                        </tr>
+<!-- Data row -->       <tr style="background-color: #FDE9D9">
+                            <td class="leading" style="border-bottom: 1px solid #ccc"><div style="min-height: 3em"></div></td>
                             <td class="table-left">run_prettify.js</td>
                             <td class="table-left">21-resources/05-js</td>
                             <td class="table-left">Google prettify application</td>
                         </tr>
-<!-- Data row -->       <tr style="background-color: #dbe5f1">
-                            <td class="leading"><div style="min-height: 3em"></div></td>
+<!-- Data row -->       <tr class="no-border" style="background-color: #DBE5F1">
+                            <td class="leading" style="border-bottom: 1px solid #DBE5F1"><div style="min-height: 3em"></div></td>
                             <td class="table-left">prettify.css</td>
                             <td class="table-left">21-resources/05-js/google-prettify</td>
                             <td class="table-left">Google prettify styles</td>
                         </tr>
-<!-- Data row -->       <tr style="background-color: #fde9d9">
-                            <td class="leading"><div style="min-height: 3em"></div></td>
+<!-- Data row -->       <tr style="background-color: #FDE9D9">
+                            <td class="leading" style="border-bottom: 1px solid #ccc"><div style="min-height: 3em"></div></td>
                             <td class="table-left">lang-*.js</td>
                             <td class="table-left">21-resources/05-js/google-prettify</td>
                             <td class="table-left">Google prettify language files (58 files)</td>
                         </tr>
 <!-- Caption -->        <tr class="no-border">
                             <td class="leading"></td>
-                            <td colspan="3" class="table-caption">Table 1.3 &emsp; Common third party files</td>
+                            <td colspan="3" class="table-caption">Table 1.3 &emsp; Common Practical Series files</td>
                         </tr>
                     </table>
 <!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
+                    <p class="hyp">Common font files:</p>
+
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TABLE - DENSE TABLE
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <table class="table-dense" id="js--t01-04">
+<!-- Header row -->     <tr>
+                            <th class="leading" style="border-bottom: 1px solid #ccc"></th>
+                            <th class="table-left" style="width: 22%">Woff file</th>
+                            <th class="table-left" style="width: 38%">Location</th>
+                            <th class="table-left" style="width: 40%">Description</th>
+                        </tr>
+<!-- Data row -->       <tr class="no-border" style="background-color: #E5DFEC">
+                            <td class="leading" style="border-bottom: 1px solid #E5DFEC"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">anda-ca-r. woff</td>
+                            <td class="table-left">21-global/03-font/woff</td>
+                            <td class="table-left">Andada&nbsp;&mdash;&nbsp;small caps, regular</td>
+                        </tr>
+<!-- Data row -->       <tr class="no-border" style="background-color: #E5DFEC">
+                            <td class="leading" style="border-bottom: 1px solid #E5DFEC"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">carr-c3-r. woff</td>
+                            <td class="table-left">21-global/03-font/woff</td>
+                            <td class="table-left">Carrois Gothic&nbsp;&mdash;&nbsp;small caps</td>
+                        </tr>
+<!-- Data row -->       <tr class="no-border" style="background-color: #E5DFEC">
+                            <td class="leading" style="border-bottom: 1px solid #E5DFEC"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">pmon-t4-r. woff</td>
+                            <td class="table-left">21-global/03-font/woff</td>
+                            <td class="table-left">PT Mono&nbsp;&mdash;&nbsp;regular</td>
+                        </tr>
+<!-- Data row -->       <tr class="no-border" style="background-color: #E5DFEC">
+                            <td class="leading" style="border-bottom: 1px solid #E5DFEC"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">ps-icon.woff</td>
+                            <td class="table-left">21-global/03-font/woff</td>
+                            <td class="table-left">Practical Series icon font</td>
+                        </tr>
+<!-- Data row -->       <tr class="no-border" style="background-color: #E5DFEC">
+                            <td class="leading" style="border-bottom: 1px solid #E5DFEC"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">ps-index.woff</td>
+                            <td class="table-left">21-global/03-font/woff</td>
+                            <td class="table-left">Practical Series index font</td>
+                        </tr>
+<!-- Data row -->       <tr class="no-border" style="background-color: #E5DFEC">
+                            <td class="leading" style="border-bottom: 1px solid #E5DFEC"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">pser-ta-r.woff</td>
+                            <td class="table-left">21-global/03-font/woff</td>
+                            <td class="table-left">PT Serif&nbsp;&mdash;&nbsp;regular</td>
+                        </tr>
+<!-- Data row -->       <tr class="no-border" style="background-color: #E5DFEC">
+                            <td class="leading" style="border-bottom: 1px solid #E5DFEC"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">pser-ta-b.woff</td>
+                            <td class="table-left">21-global/03-font/woff</td>
+                            <td class="table-left">PT Serif&nbsp;&mdash;&nbsp;bold</td>
+                        </tr>
+<!-- Data row -->       <tr class="no-border" style="background-color: #E5DFEC">
+                            <td class="leading" style="border-bottom: 1px solid #E5DFEC"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">pser-ta-i.woff</td>
+                            <td class="table-left">21-global/03-font/woff</td>
+                            <td class="table-left">PT Serif&nbsp;&mdash;&nbsp;italic</td>
+                        </tr>
+<!-- Data row -->       <tr class="no-border" style="background-color: #E5DFEC">
+                            <td class="leading" style="border-bottom: 1px solid #E5DFEC"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">pser-ta-bi.woff</td>
+                            <td class="table-left">21-global/03-font/woff</td>
+                            <td class="table-left">PT Serif&nbsp;&mdash;&nbsp;bold, italic</td>
+                        </tr>
+<!-- Data row -->       <tr class="no-border" style="background-color: #E5DFEC">
+                            <td class="leading" style="border-bottom: 1px solid #E5DFEC"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">ssan-t2-r.woff</td>
+                            <td class="table-left">21-global/03-font/woff</td>
+                            <td class="table-left">Source San Pro&nbsp;&mdash;&nbsp;light</td>
+                        </tr>
+<!-- Data row -->       <tr class="no-border" style="background-color: #E5DFEC">
+                            <td class="leading" style="border-bottom: 1px solid #E5DFEC"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">ssan-t3-r.woff</td>
+                            <td class="table-left">21-global/03-font/woff</td>
+                            <td class="table-left">Source San Pro&nbsp;&mdash;&nbsp;regular</td>
+                        </tr>
+<!-- Data row -->       <tr class="no-border" style="background-color: #E5DFEC">
+                            <td class="leading" style="border-bottom: 1px solid #E5DFEC"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">ssan-t3-b.woff</td>
+                            <td class="table-left">21-global/03-font/woff</td>
+                            <td class="table-left">Source San Pro&nbsp;&mdash;&nbsp;bold</td>
+                        </tr>
+<!-- Data row -->       <tr style="background-color: #E5DFEC">
+                            <td class="leading" style="border-bottom: 1px solid #ccc"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">ssan-t4-r.woff</td>
+                            <td class="table-left">21-global/03-font/woff</td>
+                            <td class="table-left">Source San Pro&nbsp;&mdash;&nbsp;semi-bold</td>
+                        </tr>
+<!-- Data row -->       <tr style="background-color: #DBE5F1">
+                            <td class="leading" style="border-bottom: 1px solid #DBE5F1"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">ps-fonts.css</td>
+                            <td class="table-left">21-global/03-font/</td>
+                            <td class="table-left">Practical Series font loading file</td>
+                        </tr>
+<!-- Caption -->        <tr class="no-border">
+                            <td class="leading"></td>
+                            <td colspan="3" class="table-caption">Table 1.4 &emsp; Common font files</td>
+                        </tr>
+                    </table>
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                    <p class="hyp">Page Specific Practical Series files:</p>
+
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TABLE - DENSE TABLE
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <table class="table-dense" id="js--t01-05">
+<!-- Header row -->     <tr>
+                            <th class="leading" style="border-bottom: 1px solid #ccc"></th>
+                            <th class="table-left" style="width: 22%">File</th>
+                            <th class="table-left" style="width: 38%">Location</th>
+                            <th class="table-left" style="width: 25%">Description</th>
+                            <th class="table-left" style="width: 15%">Page</th>
+                        </tr>
+<!-- Data row -->       <tr class="no-border" style="background-color: #F2DBDB">
+                            <td class="leading" style="border-bottom: 1px solid #F2DBDB"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">fig-00-01.svg/png</td>
+                            <td class="table-left">01-pages/00-00-index/02-images</td>
+                            <td class="table-left">Cover image (2 images)</td>
+                            <td class="table-left">index</td>
+                        </tr>
+<!-- Data row -->       <tr style="background-color: #FDE9D9">
+                            <td class="leading" style="border-bottom: 1px solid #ccc"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">00-00-scroll.js</td>
+                            <td class="table-left">01-pages/00-00-index/05-js</td>
+                            <td class="table-left">Slow scroll jQuery file</td>
+                            <td class="table-left">index</td>
+                        </tr>
+<!-- Data row -->       <tr class="no-border" style="background-color: #F2DBDB">
+                            <td class="leading" style="border-bottom: 1px solid #F2DBDB"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">fig-01-xx.svg/png</td>
+                            <td class="table-left">01-pages/01-00-intro/02-images</td>
+                            <td class="table-left">Section images (18 images)</td>
+                            <td class="table-left">01-00-intro</td>
+                        </tr>
+<!-- Data row -->       <tr style="background-color: #FDE9D9">
+                            <td class="leading" style="border-bottom: 1px solid #ccc"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">01-00-scroll.js</td>
+                            <td class="table-left">01-pages/01-00-intro/05-js</td>
+                            <td class="table-left">Slow scroll jQuery file</td>
+                            <td class="table-left">01-00-intro</td>
+                        </tr>
+<!-- Data row -->       <tr style="background-color: #FDE9D9">
+                            <td class="leading" style="border-bottom: 1px solid #ccc"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">01-02-scroll.js</td>
+                            <td class="table-left">01-pages/01-02-intro/05-js</td>
+                            <td class="table-left">Slow scroll jQuery file</td>
+                            <td class="table-left">01-02-intro</td>
+                        </tr>
+<!-- Data row -->       <tr class="no-border" style="background-color: #F2DBDB">
+                            <td class="leading" style="border-bottom: 1px solid #F2DBDB"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">fig-02-xx.svg/png</td>
+                            <td class="table-left">01-pages/02-00-example/02-images</td>
+                            <td class="table-left">Section images (2 images)</td>
+                            <td class="table-left">02-00-example</td>
+                        </tr>
+<!-- Data row -->       <tr style="background-color: #FDE9D9">
+                            <td class="leading" style="border-bottom: 1px solid #ccc"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">02-00-scroll.js</td>
+                            <td class="table-left">01-pages/02-00-example/05-js</td>
+                            <td class="table-left">Slow scroll jQuery file</td>
+                            <td class="table-left">02-00-example</td>
+                        </tr>
+<!-- Data row -->       <tr class="no-border" style="background-color: #F2DBDB">
+                            <td class="leading" style="border-bottom: 1px solid #F2DBDB"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">fig-02-xx.svg/png</td>
+                            <td class="table-left">01-pages/02-02-example/02-images</td>
+                            <td class="table-left">Section images (3 images)</td>
+                            <td class="table-left">02-02-example</td>
+                        </tr>
+<!-- Data row -->       <tr style="background-color: #FDE9D9">
+                            <td class="leading" style="border-bottom: 1px solid #ccc"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">02-02-scroll.js</td>
+                            <td class="table-left">01-pages/02-02-example/05-js</td>
+                            <td class="table-left">Slow scroll jQuery file</td>
+                            <td class="table-left">02-02-example</td>
+                        </tr>
+<!-- Data row -->       <tr class="no-border" style="background-color: #F2DBDB">
+                            <td class="leading" style="border-bottom: 1px solid #F2DBDB"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">fig-80-xx.svg/png</td>
+                            <td class="table-left">01-pages/80-00-finally/02-images</td>
+                            <td class="table-left">Section images (2 images)</td>
+                            <td class="table-left">80-00-finally</td>
+                        </tr>
+<!-- Data row -->       <tr style="background-color: #FDE9D9">
+                            <td class="leading" style="border-bottom: 1px solid #ccc"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">80-00-scroll.js</td>
+                            <td class="table-left">01-pages/80-00-finally/05-js</td>
+                            <td class="table-left">Slow scroll jQuery file</td>
+                            <td class="table-left">80-00-finally</td>
+                        </tr>
+<!-- Data row -->       <tr class="no-border" style="background-color: #DBE5F1">
+                            <td class="leading" style="border-bottom: 1px solid #DBE5F1"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">98-00-codeline.css</td>
+                            <td class="table-left">01-pages/98-00-blank /01-css</td>
+                            <td class="table-left">Code fragment css file</td>
+                            <td class="table-left">98-00-blank</td>
+                        </tr>
+<!-- Data row -->       <tr class="no-border" style="background-color: #F2DBDB">
+                            <td class="leading" style="border-bottom: 1px solid #F2DBDB"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">fig-98-xx.svg/png</td>
+                            <td class="table-left">01-pages/98-00-blank/02-images</td>
+                            <td class="table-left">Section images (8 images)</td>
+                            <td class="table-left">98-00-blank</td>
+                        </tr>
+<!-- Data row -->       <tr class="no-border" style="background-color: #EAF1DD">
+                            <td class="leading" style="border-bottom: 1px solid #EAF1DD"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">code-98-02.zip</td>
+                            <td class="table-left">01-pages/98-00-blank/04-data</td>
+                            <td class="table-left">Code fragment download</td>
+                            <td class="table-left">98-00-blank</td>
+                        </tr>
+<!-- Data row -->       <tr style="background-color: #FDE9D9">
+                            <td class="leading" style="border-bottom: 1px solid #ccc"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">98-00-scroll.js</td>
+                            <td class="table-left">01-pages/98-00-blank/05-js</td>
+                            <td class="table-left">Slow scroll jQuery file</td>
+                            <td class="table-left">98-00-blank</td>
+                        </tr>
+<!-- Data row -->       <tr class="no-border" style="background-color: #DBE5F1">
+                            <td class="leading" style="border-bottom: 1px solid #DBE5F1"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">99-00-codeline.css</td>
+                            <td class="table-left">01-pages/99-00-typicals/01-css</td>
+                            <td class="table-left">Code fragment css file</td>
+                            <td class="table-left">99-00-typicals</td>
+                        </tr>
+<!-- Data row -->       <tr class="no-border" style="background-color: #F2DBDB">
+                            <td class="leading" style="border-bottom: 1px solid #F2DBDB"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">fig-99-xx.svg/png</td>
+                            <td class="table-left">01-pages/99-00-typicals/02-images</td>
+                            <td class="table-left">Section images (19 images)</td>
+                            <td class="table-left">99-00-typicals</td>
+                        </tr>
+<!-- Data row -->       <tr class="no-border" style="background-color: #EAF1DD">
+                            <td class="leading" style="border-bottom: 1px solid #EAF1DD"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">code-99-02.zip</td>
+                            <td class="table-left">01-pages/99-00-typicals/04-data</td>
+                            <td class="table-left">Code fragment download</td>
+                            <td class="table-left">99-00-typicals</td>
+                        </tr>
+<!-- Data row -->       <tr style="background-color: #FDE9D9">
+                            <td class="leading" style="border-bottom: 1px solid #ccc"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">99-00-scroll.js</td>
+                            <td class="table-left">01-pages/99-00-typicals/05-js</td>
+                            <td class="table-left">Slow scroll jQuery file</td>
+                            <td class="table-left">99-00-typicals</td>
+                        </tr>
+<!-- Caption -->        <tr class="no-border">
+                            <td class="leading"></td>
+                            <td colspan="4" class="table-caption">Table 1.5 &emsp; Page specific files</td>
+                        </tr>
+                    </table>
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+                    <p class="hyp">There is also a template <span class="code">cc-ss-pagename</span> folder that can be replicated and used for each new page you add, it contains:</p>
+
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      TABLE - DENSE TABLE
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <table class="table-dense" id="js--t01-06">
+<!-- Header row -->     <tr>
+                            <th class="leading" style="border-bottom: 1px solid #ccc"></th>
+                            <th class="table-left" style="width: 22%">File</th>
+                            <th class="table-left" style="width: 38%">Location</th>
+                            <th class="table-left" style="width: 40%">Description</th>
+                        </tr>
+<!-- Data row -->       <tr class="no-border" style="background-color: #DBE5F1">
+                            <td class="leading" style="border-bottom: 1px solid #DBE5F1"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">cc-ss-codelines.css</td>
+                            <td class="table-left">01-pages/cc-ss-typicals/01-css</td>
+                            <td class="table-left">Code fragment css file</td>
+                        </tr>
+<!-- Data row -->       <tr style="background-color: #FDE9D9">
+                            <td class="leading" style="border-bottom: 1px solid #ccc"><div style="min-height: 3em"></div></td>
+                            <td class="table-left">cc-ss-scroll.js</td>
+                            <td class="table-left">01-pages/cc-ss-typicals/05-js</td>
+                            <td class="table-left">Slow scroll jQuery file	</td>
+                        </tr>
+<!-- Caption -->        <tr class="no-border">
+                            <td class="leading"></td>
+                            <td colspan="3" class="table-caption">Table 1.6 &emsp; Template page name folder</td>
+                        </tr>
+                    </table>
+<!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                    <p class="hyp">In total there are 274 files and 67 directories.</p>
+
                     <p class="hyp">The detailed instructions for using the template are available at</p>
 
                     <p class="hyp" style="text-align: center"><a class="hlink nohyp" href="https://www.practicalseries.com/1001-webdevelopment">https://www.practicalseries.com/1001-webdevelopment</a></p>
-
-                    <p class="hyp">In total there are 302 files and 68 directories.</p>
 
 <!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
       NOTE - HANGING INDENT WITH MULTIPLE PARAGRAPHS
@@ -446,15 +741,15 @@ Date          Issue        Author         Reason for Modification
       UNNUMBERED LIST
       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
                     <ul class="list-no-num">                    <!-- Start of unnumbered list -->
-                        <li><p class="hyp"><span class="code">ps-html-conversion-r01.00.docm</span></p></li>
+                        <li><p class="hyp"><span class="code">ps-html-conversion.docm</span></p></li>
 
-                        <li><p class="hyp"><span class="code">ps-website-content-r01.00.docx</span></p></li>
+                        <li><p class="hyp"><span class="code">ps-website-content.docx</span></p></li>
                     </ul>                                       <!-- End of unnumbered list   -->
 <!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-                    <p class="hyp">The conversion document is used to convert text (written in a Word document) into text that can be pasted into a web page (if handles all the special characters and escape codes). I explain how to do it <a class="hlink nohyp utx" href="https://www.practicalseries.com/1001-webdevelopment">here</a>.</p>
+                    <p class="hyp">The conversion document is used to convert text (written in a Word document) into text that can be pasted into a web page (it handles all the special characters and escape codes). I explain how to do it <a class="xref js--sc-010103" href="#">here</a>.</p>
 
-                    <p class="hyp">The content document is an empty word document with various styles setup to match the <span class="code">&lt;span&gt;</span> inline text styles used on the website. I&rsquo;ve included it so you have a document to start writing your website content.</p>
+                    <p class="hyp">The content document is a word document with various styles setup to match the <span class="code">&lt;span&gt;</span> inline text styles used on the website. I&rsquo;ve included it so you have a document to start writing your website content. The document is not entirely empty, it contains some instructions and a few of my thoughts about the world in general.</p>
 
                 </div>                                          <!-- End of section text      -->
 
@@ -514,6 +809,7 @@ Date          Issue        Author         Reason for Modification
                         </figure>
                     </div>
 <!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
                     <p class="hyp">Apparently pornography is popular too; I&rsquo;ll let you take your own pictures.</p>
 
                     <p class="hyp">Now, while I can&rsquo;t tell you what your website should be about, I can offer some pearls of wisdom about how to produce it.</p>
@@ -555,7 +851,7 @@ Date          Issue        Author         Reason for Modification
 
                     <p class="hyp">I can&rsquo;t stress strongly enough: </p>
 
-                    <p class="hyp" style="text-align: center" ><span class="all-caps notice">do not write the website content directly in the text editor</span></p>
+                    <p class="nohyp" style="text-align: center" ><span class="all-caps notice">do not write the website content directly in the text editor</span></p>
 
                     <p class="hyp">If you do it will be full of typing errors.</p>
 
@@ -585,8 +881,8 @@ Date          Issue        Author         Reason for Modification
                             <a href="01-pages/01-00-intro/02-images/fig-01-03b.png" data-lightbox="fig-set" data-title="Figure 1.3b - LboxFigCaption">
                                 <img src="01-pages/01-00-intro/02-images/fig-01-03b.png" alt="Figure 1.3b - Doc page 3">
                             </a>
+                            <figcaption>Figure 1.3 &emsp; Extracts from the Word document for the explanatory website</figcaption>
                         </figure>
-                        <figcaption>Figure 1.3 &emsp; Extracts from the Word document for the explanatory website</figcaption>
                     </div>
 <!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
                     <p class="hyp">If you have the pdf version of the website (I give it to all those who donate £5 or more), then you are essentially seeing the document that was written in Word.</p>
@@ -658,7 +954,7 @@ Date          Issue        Author         Reason for Modification
 
                 <div class="rg-col rg-span3-5">                 <!-- Start of section text    -->
 
-                    <p class="hyp">I suggest you strip everything out of the template that you don&rsquo;t need, but leave the 98-00-blank and 99-00-typicals sections (these are useful, they hold basic pages and examples of all the other things that you will need, it&rsquo;s handy just to copy the thing you need, a table for example, and then mess about with it on you web page until you get what you want). You can delete the blank and typicals pages when you&rsquo;ve finished your website.</p>
+                    <p class="hyp">I suggest you strip everything out of the template that you don&rsquo;t need, but leave the <span class="code">98-00-blank</span> and <span class="code">99-00-typicals</span> sections (these are useful, they hold basic pages and examples of all the other things that you will need, it&rsquo;s handy just to copy the thing you need, a table for example, and then mess about with it on you web page until you get what you want). You can delete the blank and typicals pages when you&rsquo;ve finished your website.</p>
 
                     <p class="hyp">Copy the <span class="code">98-00-blank.html</span> page and rename it for the page you are configuring, let&rsquo;s say <span class="code">05-00-testpage.html</span>.</p>
 
@@ -721,7 +1017,7 @@ Date          Issue        Author         Reason for Modification
       UNNUMBERED LIST
       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
                     <ul class="list-no-num">                    <!-- Start of unnumbered list -->
-                        <li><p class="hyp"><span class="code">ps-html-conversion-r01.00.docm</span></p></li>
+                        <li><p class="hyp"><span class="code">ps-html-conversion.docm</span></p></li>
                     </ul>                                       <!-- End of unnumbered list   -->
 <!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
@@ -745,7 +1041,7 @@ Date          Issue        Author         Reason for Modification
                     </table>
 <!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-                    <p class="hyp">If you look at this, there are several characters in there that don&rsquo;t work particularly well if they are just copied directly into HTML. The obvious ones are the &lt; and &gt; characters, other less obvious ones are the curly quotes, these have to be entered with <span class="code">&amp;codes</span> (see <a class="hlink nohyp utx" href="https://www.practicalseries.com/1001-webdevelopment">here</a>) as does the &amp; (of &amp;c.) as well as the section mark &sect;. </p>
+                    <p class="hyp">If you look at this, there are several characters in there that don&rsquo;t work particularly well if they are just copied directly into HTML. The obvious ones are the &lt; and &gt; characters, other less obvious ones are the curly quotes, these have to be entered with <span class="code">&amp;codes</span> (see <a class="hlink nohyp" href="https://www.practicalseries.com/1001-webdevelopment/06-11-box.html#js--061100">here</a>) as does the &amp; (of &amp;c.) as well as the section mark &sect;. </p>
 
                     <p class="hyp">There are also other characters, there is an em-dash (a wide dash) in the first paragraph, and there are some invisible &ldquo;non-breaking spaces&rdquo;, these are usually inserted where things should not break across lines, the most common being after a section mark&nbsp;(&sect;), it is not usual to allow the number to separate from the section mark. The same is true of numbers and their units.</p>
 
@@ -897,7 +1193,7 @@ Date          Issue        Author         Reason for Modification
 
                     <p class="hyp">Generally for very big images, reduce the size of the image (in proportion) until its width is about 1500 pixels (about twice the maximum width of 748&nbsp;px).</p>
 
-                    <p class="hyp">If the native image is smaller than this, <em>do not make it bigger</em>, that will pixelate the image and make it look worse, instead fix the maximum width of the image, see <a class="hlink nohyp utx" href="https://www.practicalseries.com/1001-webdevelopment">here</a>.</p>
+                    <p class="hyp">If the native image is smaller than this, <em>do not make it bigger</em>, that will pixelate the image and make it look worse, instead fix the maximum width of the image, see <a class="hlink nohyp" href="https://www.practicalseries.com/1001-webdevelopment/15-06-figures.html#js--150600">here</a>.</p>
 
                     <p class="hyp">The next thing we can change is the number of different colours in the image. This can be done by using an image optimisation site, there are loads of these, the one I use is <a class="hlink nohyp" href="https://imagecompressor.com/">Optimazilla</a>.</p>
 
@@ -918,7 +1214,7 @@ Date          Issue        Author         Reason for Modification
                     </div>
 <!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->                    <p class="hyp"></p>
 
-                    <p class="hyp"><span class="first-use">That really is one stupid looking dog.</span></p>
+                    <p class="hyp"><span class="first-use">That really is one stupid looking dog. I&rsquo;m pretty sure he&rsquo;s smiling.</span></p>
 
                     <p class="hyp">The image on the left is the original image, the one on the right has been compressed, the number of colours has been reduced to 221 unique colours (the original image had 87,000). <span class="first-use">Buggered if I can see the difference.</span></p>
 
@@ -941,11 +1237,11 @@ Date          Issue        Author         Reason for Modification
                             <a href="01-pages/01-00-intro/02-images/fig-01-06b.png" data-lightbox="fig-set" data-title="Figure 1.6b - LboxFigCaption">
                                 <img src="01-pages/01-00-intro/02-images/fig-01-06b.png" alt="Figure 1.6b - Doc page 3">
                             </a>
+                            <figcaption>Figure 1.6 &emsp; Compressed image, original at top, compressed below</figcaption>
                         </figure>
-                        <figcaption>Figure 1.6 &emsp; Compressed image, original at top, compressed below</figcaption>
                     </div>
 <!--  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-                    <p class="hyp">I&rsquo;m not sure I can tell the difference, if I zoom right in, you can see the differences:</p>
+                    <p class="hyp">I&rsquo;m not sure I can tell the difference, if I zoom right in, you can see where the image quality is reduced:</p>
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
      LIGHTBOX FIGURE - DOUBLE FIGURE HALF PAGE WIDTH (361 px)

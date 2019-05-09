@@ -64,16 +64,6 @@ $(document).ready(function() {                  /* START OF PAGE READY FUNCTION 
 
 
 /* ****************************************************************************
-   REVISION
-   **************************************************************************** */
-
-    $('.aside-right-rev').append (
-        "<p>scroll.js&nbsp;&mdash;&nbsp;SNN.XX.SMM</p>" /* LOCAL JS REVISION NUMBER */
-    );
-
-
-
-/* ****************************************************************************
    SCROLL TO SECTION
    ****************************************************************************
    This holds several scrollTop functions that scroll from the TOC to the

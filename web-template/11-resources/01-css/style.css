@@ -44,7 +44,7 @@ of style sheets and the order in which they should be called is given here:
                                   different browsers
         prettify.css            - styles associated with Google Prettify
         (called by script)        this is called automatically by the
-                                  run-prettify.js file
+                                  run_prettify.js file
         lightbox.css            - styles associated with lightbox2 viewer
         grid.css                - defines a responsive grid (Kerstner grid)
                                   for columns within the website
@@ -100,14 +100,69 @@ This is a complete summary of all software modifications.
 
 Date          Issue        Author         Reason for Modification
 -------------------------------------------------------------------------------
-28 Mar 2019   D01          M. Gledhill    Based on PS1001-web-template P14
+09 May 2019   R01          M. Gledhill    First formal release
+
+28 Apr 2019   P23          M. Gledhill    Code header change to Triplicat and
+                                          font-size reduced
+
+11 Apr 2019   P16          M. Gledhill    Published
+
+10 Apr 2019   d-P15.10.02  M. Gledhill    Margin added above figcaption and
+                                          code-caption
+                                          .sans-b font changed to conc-t4-b
+
+27 Mar 2019   P14          M. Gledhill    Published
+
+19 Mar 2019   d-P13.00.02  M. Gledhill    .sans-b style added
+                                          .in-head style added
+
+17 Mar 2019   d-P13.00.01  M. Gledhill    - Flexbox removed from equations
+                                            .rev classes added for build badge
+                                          - Spell checked
+                                          - Content matches web content doc
+                                          - Comments updated and corrected
+
+27 Jan 2019   P13          M. Gledhill    Clearfix hack removed from .top-nav
+                                          Minor inconsistences fixed:
+                                            - Duplications
+                                            - Unnecessary instructions
+
+14 Jul 2018   P11          M. Gledhill    Published (social media update)
+
+20 Dec 2017   d-P10.10.01  M. Gledhill    Social media icons added
+
+18 Sep 2017   P10          M. Gledhill    Updated to match PS1002-vcs version.
+                                          Now based on 1002-vcs P15.
+                                          Files identical at this issue date.
+
+27 Jul 2017   d-P04.04.01  M. Gledhill    .nav-wide-blank class made responsive
+                                          closes #2
+
+16 Jul 2017   P03          M. Gledhill    Published
+
+12 Jul 2017   d-P02.02.04  M. Gledhill    .git-incid line height reduced
+
+28 Jun 2017   d-P02.02.02  M. Gledhill    Git commands made blue instead of red
+
+10 Jun 2017   P02          M. Gledhill    Published
+
+07 Jun 2017   d-P01.01.03  M. Gledhill    .pay link class added for PayPal link
+
+05 Jun 2017   d-P01.01.01  M. Gledhill    .payment class added
+
+04 Jun 2017   P01          M. Gledhill    First published
+
+03 Jun 2017   D01          M. Gledhill    Git styles added
+
+27 May 2017   D00          M. Gledhill    Development - based on PS1001 P10
+
 ---------------------------------------------------------------------------- */
 
 
 /* ****************************************************************************
    REVISION
    **************************************************************************** */
-.aside-right-rev:before { content: "style.css\00a0\2014\00a0 D01"; }
+.aside-right-rev:before { content: "style.css\00a0\2014\00a0 R01"; }
 
 
 
@@ -336,7 +391,7 @@ a:active { color: #404030; }
     background-color: #f8f8f8;
 }
 
-.nav-cover { display: none}                  /* Hide top nav bar on cover page */
+.nav-cover { display: none}                  /* hide top nav bar on cover page */
 
 .top-nav-text { visibility: visible; }       /* make navigation text visible */
 
@@ -1402,9 +1457,12 @@ a:active { color: #404030; }
 
 .sans { font-family: "conc-t3-r"; }         /* TEXT STYLE - sans serif font (override) */
 
-.sans-b { font-family: "conc-t4-r"; }       /* TEXT STYLE - sans serif font bold (override) */
+.sans-b { font-family: "conc-t4-b"; }       /* TEXT STYLE - sans serif font bold (override) */
 
-.index { font-family: "conc-i3-r"; }        /* TEXT STYLE - index font (override) */
+.index {                                    /* TEXT STYLE - index font (override) */
+    font-family: "conc-i3-r";
+    font-feature-settings: "ss00";
+}
 
 .mono { font-family: "trip-t4-r"; }         /* TEXT STYLE - monospaced font (override) */
 
@@ -1619,7 +1677,10 @@ a:active { color: #404030; }
  }
 .fig-col:first-child { margin-left: 0; } /* remove left margin from first column */
 
-figcaption { margin-bottom: 1.2rem; }
+figcaption {
+    margin-bottom: 1.2rem;
+    margin-top: 0.5rem
+}
 
 @media only screen and (max-width: 520px) { .fig-row{ width: 100%; font-size: 0.8rem;} }
 
@@ -2102,9 +2163,10 @@ tr.in-no-border th {                        /* incidental table no-bottom border
 }
 
 .code-header {                              /* code header (filename header) */
-    font-family: "conc-t3-r";
+    font-family: "trip-t3-b";
     -webkit-font-feature-settings: "ss02";
     font-feature-settings: "ss02";
+    font-size: 0.65rem;
     text-transform: lowercase;
     text-align: right;
     padding: 0.1rem 0.2rem 0.2rem 0.2rem;
@@ -2141,7 +2203,7 @@ tr.in-no-border th {                        /* incidental table no-bottom border
     text-align: center;
     color: #404030;
     padding-top: 0.2rem;
-    margin: 0 auto 1rem 0;
+    margin: 0.5rem auto 1rem 0;
     border-collapse: collapse;
 }
 
@@ -2345,6 +2407,7 @@ tr.in-no-border th {                        /* incidental table no-bottom border
 @media all and (max-width:720px)  {.footer { height: 44px; padding-top: 10px; }}
 @media all and (max-width:680px)  {.footer { height: 41px; padding-top:  9px; }}
 @media all and (max-width:520px)  {.footer-nav li { margin-left:0.5rem; }}
+
 
 
 /* ███████████████████████████████████████████████████████████████████████████

@@ -47,7 +47,9 @@ This is a complete summary of all software modifications.
 
 Date          Issue        Author         Reason for Modification
 -------------------------------------------------------------------------------
-28 Mar 2019   D01          M. Gledhill    Based on PS1001-web-template P14
+09 May 2019   R01          M. Gledhill    First formal release
+
+07 May 2019   D01          M. Gledhill    Based on PS1001-web-template R01
 ---------------------------------------------------------------------------- */
 
 
@@ -61,13 +63,6 @@ Date          Issue        Author         Reason for Modification
 
 $(document).ready(function() {                  /* START OF PAGE READY FUNCTION */
 
-/* ****************************************************************************
-   REVISION
-   **************************************************************************** */
-
-    $('.aside-right-rev').append (
-        "<p>scroll.js&nbsp;&mdash;&nbsp;D01</p>" /* LOCAL JS REVISION NUMBER */
-    );
 
 /* ****************************************************************************
    SCROLL TO SECTION

@@ -13,68 +13,58 @@ PRACTICALSERIES: Practical Series of Publications by Michael Gledhill
 -------------------------------------------------------------------------------
 DETAILS
 
-1. EQUITY, CONCOURSE AND TRIPLICATE FONTS
-The following file contains a subset of the Equity, Concourse and Triplicate
-fonts developed by Matthew Butterick. These fonts were purchased under a single
-licence.
-
-Under the terms of that licence, the fonts may be used on up to three domains
-owned by this organisation. This is the second of those sites.
-
-The fonts were converted to webfonts using the font squirrel font generator:
-
-    https://www.fontsquirrel.com/tools/webfont-generator
-
-under Mr. Buttericks instructions.
+1. OPEN SOURCE FONTS
+The following file load the open source fonts used to replace the Equity font
+set used on the main Practical Series website.
 
 
-2. ICON FONTS
+2. PS FONTS
+The Practical Series index font is included (this has the numbers 0-26
+encased in a circle), it is used for numbered lists.
+
 A small Practical Series font (ps-icons) created from several svg icon images
-is also included.
+is also included, this is predominantly used to give icons in the navigation
+bar
 
 
 3. NAMING CONVENTIONS
 The following fonts have been converted to webfonts and are loaded by this
 file:
 
-                                        Shorthand name
-    Font name           Type           (within website)
----------------------------------------------------------------------
-    Equity A Caps       Regular         eqty-ca-r
-    Equity A Caps       Bold            eqty-ca-b
-    Equity A Text       Regular         eqty-ta-r
-    Equity A Text       Bold            eqty-ta-b
-    Equity A Text       Italic          eqty-ta-i
-    Equity A Text       Bold & italic   eqty-ta-bi
+Open source                   Equity                             Shorthand name
+ Font name                   Font name           Type           (within website)
+--------------------------------------------------------------------------------
+Andada small caps            Equity A Caps       Regular         eqty-ca-r
+Andada small caps            Equity A Caps       Bold            eqty-ca-b
+PT Serif                     Equity A Text       Regular         eqty-ta-r
+PT Serif                     Equity A Text       Bold            eqty-ta-b
+PT Serif                     Equity A Text       Italic          eqty-ta-i
+PT Serif                     Equity A Text       Bold & italic   eqty-ta-bi
 
-    Concourse T2        Regular         conc-t2-r
-    Concourse T2        Bold            conc-t2-b
-    Concourse T2        Italic          conc-t2-i
-    Concourse T2        Bold & italic   conc-t2-bi
-    Concourse C2 Caps   Regular         conc-c2-r
+Source Sans Pro light        Concourse T2        Regular         conc-t2-r
+Source Sans Pro light        Concourse T2        Bold            conc-t2-b
+Source Sans Pro light        Concourse T2        Italic          conc-t2-i
+Source Sans Pro light        Concourse T2        Bold & italic   conc-t2-bi
+Carrois Gothic small caps    Concourse C2 Caps   Regular         conc-c2-r
 
-    Concourse T3        Regular         conc-t3-r
-    Concourse T3        Bold            conc-t3-b
-    Concourse T3        Italic          conc-t3-i
-    Concourse T3        Bold & italic   conc-t3-bi
-    Concourse C3 Caps   Regular         conc-c3-r
-    Concourse T3 Index  Regular         conc-i3-r
+Source Sans Pro              Concourse T3        Regular         conc-t3-r
+Source Sans Pro              Concourse T3        Bold            conc-t3-b
+Source Sans Pro              Concourse T3        Italic          conc-t3-i
+Source Sans Pro              Concourse T3        Bold & italic   conc-t3-bi
+Carrois Gothic small caps    Concourse C3 Caps   Regular         conc-c3-r
+PS-Index                     Concourse T3 Index  Regular         conc-i3-r
 
-    Concourse T4        Regular         conc-t4-r
-    Concourse T4        Bold            conc-t4-b
-    Concourse T4        Italic          conc-t4-i
-    Concourse T4        Bold & italic   conc-t4-bi
-    Concourse C4 Caps   Regular         conc-c4-r
-    Concourse T7        Regular         conc-t7-r
+Source Sans Pro semi-bold    Concourse T4        Regular         conc-t4-r
+Source Sans Pro semi-bold    Concourse T4        Bold            conc-t4-b
+Source Sans Pro semi-bold    Concourse T4        Italic          conc-t4-i
+Source Sans Pro semi-bold    Concourse T4        Bold & italic   conc-t4-bi
+Carrois Gothic small caps    Concourse C4 Caps   Regular         conc-c4-r
 
-    Triplicate T3c      Regular         trip-t3-r
-    Triplicate T3c      Bold            trip-t3-b
-    Triplicate T3c      Italics         trip-t3-i
-    Triplicate T4c      Regular         trip-t4-r
-    Triplicate T4c      Bold            trip-t4-b
-    Triplicate T4c      Italics         trip-t4-i
+PT Mono                      Triplicate T4c      Regular         trip-t4-r
+PT Mono                      Triplicate T4c      Bold            trip-t4-b
+PT Mono                      Triplicate T4c      Italics         trip-t4-i
 
-    ps-icons            Regular         icon-ps-r
+ps-icons                     ps-icons            Regular         icon-ps-r
 
 
 
@@ -99,31 +89,31 @@ Date          Issue        Author         Reason for Modification
 
 @font-face {                    /* Serif Small Caps - regular*/
     font-family: 'eqty-ca-r';
-    src: url(woff-alt/anda-ca-r.woff) format('woff');
+    src: url(woff/anda-ca-r.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {                    /* Serif text - regular */
     font-family: 'eqty-ta-r';
-    src: url(woff-alt/pser-ta-r.woff) format('woff');
+    src: url(woff/pser-ta-r.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {                    /* Serif text - bold */
     font-family: 'eqty-ta-b';
-    src: url(woff-alt/pser-ta-b.woff) format('woff');
+    src: url(woff/pser-ta-b.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {                    /* Serif text - italic */
     font-family: 'eqty-ta-i';
-    src: url(woff-alt/pser-ta-i.woff) format('woff');
+    src: url(woff/pser-ta-i.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {                    /* Serif text - bold & italic */
     font-family: 'eqty-ta-bi';
-    src: url(woff-alt/pser-ta-bi.woff) format('woff');
+    src: url(woff/pser-ta-bi.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -135,7 +125,7 @@ Date          Issue        Author         Reason for Modification
 /* Sans-serif T2 ------------------------------------------------------ */
 @font-face {                    /* Sans-serif T2 - regular */
     font-family: 'conc-t2-r';
-    src: url(woff-alt/ssan-t2-r.woff) format('woff');
+    src: url(woff/ssan-t2-r.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -143,25 +133,25 @@ Date          Issue        Author         Reason for Modification
 /* Sans-serif T3 ------------------------------------------------------- */
 @font-face {                    /* Sans-serif T3 - regular */
     font-family: 'conc-t3-r';
-    src: url(woff-alt/ssan-t3-r.woff) format('woff');
+    src: url(woff/ssan-t3-r.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {                    /* Sans-serif T3 - bold */
     font-family: 'conc-t3-b';
-    src: url(woff-alt/ssan-t3-b.woff) format('woff');
+    src: url(woff/ssan-t3-b.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {                    /* Sans-serif T3 Index - regular */
     font-family: 'conc-i3-r';
-    src: url(woff-alt/ps-index.woff) format('woff');
+    src: url(woff/ps-index.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {                    /* Sans-serif C3 Small caps - regular */
     font-family: 'conc-c3-r';
-    src: url(woff-alt/carr-c3-r.woff) format('woff');
+    src: url(woff/carr-c3-r.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -169,13 +159,13 @@ Date          Issue        Author         Reason for Modification
 /* Sans-serif T4 ------------------------------------------------------ */
 @font-face {                    /* Sans-serif T4 - regular */
     font-family: 'conc-t4-r';
-    src: url(woff-alt/ssan-t4-r.woff) format('woff');
+    src: url(woff/ssan-t4-r.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {                    /* Sans-serif C4 Small caps - regular */
     font-family: 'conc-c4-r';
-    src: url(woff-alt/carr-c3-r.woff) format('woff');
+    src: url(woff/carr-c3-r.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -187,7 +177,7 @@ Date          Issue        Author         Reason for Modification
 /* Monotype T4c ------------------------------------------------------- */
 @font-face {                    /* Monotype T4c - regular */
     font-family: 'trip-t4-r';
-    src: url(woff-alt/pmon-t4-r.woff) format('woff');
+    src: url(woff/pmon-t4-r.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -198,7 +188,7 @@ Date          Issue        Author         Reason for Modification
 
 @font-face {                    /* PS Icons - regular */
     font-family: 'icon-ps-r';
-    src: url(woff-alt/ps-icons.woff) format('woff');
+    src: url(woff/ps-icons.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 }
